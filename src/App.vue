@@ -1,20 +1,23 @@
 <template>
   <div id="app">
-    <Menu />
+    <MainMenu />
 
     <div class="router-view">
+      <LogoBar />
       <router-view/>
     </div>
   </div>
 </template>
 
 <script>
-import Menu from '@/components/Menu'
+import MainMenu from '@/components/Menu'
+import LogoBar from '@/components/LogoBar'
 
 export default {
   name: 'app',
   components: {
-    Menu
+    MainMenu,
+    LogoBar
   }
 }
 </script>
@@ -26,6 +29,8 @@ html, body, ul {
 }
 
 .router-view {
+  overflow: auto;
+  position: relative;
   margin-left: 100px;
   width: calc(100% - 100px);
 }
