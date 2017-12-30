@@ -1,23 +1,32 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <Menu />
+
+    <div class="router-view">
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <script>
+import Menu from '@/components/Menu'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    Menu
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+html, body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.router-view {
+  margin-left: 100px;
+  width: calc(100% - 100px);
 }
 </style>

@@ -1,0 +1,60 @@
+%button {
+    min-width: 200px;
+    height: 60px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 0.78;
+    text-align: center;
+    cursor: pointer;
+    @include font-size(18px);
+    @include border-radius(5px);
+    @include transition(all 230ms ease-in-out);
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.button-primary {
+    @extend %button;
+    background-color: $blue-main;
+    color: $white-main;
+    border: 1px solid rgba(29, 50, 92, 0.16);
+
+    &:hover, &:focus {
+        background-color: $blue-main-dark;
+    }
+
+    &:active {
+        background-color: $blue-dark;
+    }
+
+    &:disabled, &[disabled] {
+        border-color: rgba(29, 50, 92, 0.08);
+        background-color: $blue-disabled;
+        cursor: not-allowed;
+    }
+}
+
+.button-secondary {
+    @extend %button;
+    background-color: $white-main;
+    color: $blue-light;
+    box-shadow: 0 1px 4px 0 #edf2f7, 0 2px 3px 0 rgba(72, 142, 255, 0.08);
+    border: 1px solid rgba(90, 108, 137, 0.24);
+
+    &:hover, &:focus {
+        color: $blue-main;
+        border-color: rgba(90, 108, 137, 0.64);
+    }
+
+    &:active {
+        color: $blue-dark;
+        border-color: rgba(90, 108, 137, 0.64);
+    }
+
+    &:disabled, &[disabled] {
+        border-color: rgba(90, 108, 137, 0.26);
+        color: $blue-disabled;
+        cursor: not-allowed;
+    }
+}
