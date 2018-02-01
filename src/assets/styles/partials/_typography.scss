@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600|Source+Sans+Pro');
 
+$poppins: "Poppins", sans-serif;
+
 .placeholder-text {
     font-family: 'Source Sans Pro', sans-serif;
     @include font-size(22px);
@@ -34,7 +36,7 @@ a, a:link, a:visited {
 }
 
 h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: $poppins;
     @include font-size(50px);
     font-weight: 600;
     line-height: 1.0;
@@ -43,7 +45,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: $poppins;
     @include font-size(32px);
     font-weight: 600;
     line-height: 1.25;
@@ -52,7 +54,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: $poppins;
     @include font-size(22px);
     font-weight: 600;
     line-height: 1.36;

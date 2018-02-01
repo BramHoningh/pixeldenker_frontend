@@ -22,7 +22,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "./assets/styles/all";
+
 html, body, ul {
   margin: 0;
   padding: 0;

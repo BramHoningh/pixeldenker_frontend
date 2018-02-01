@@ -2,18 +2,21 @@
 <div>
   <Hero position="center" />
   <TextComp />
+  <TextSlider />
 </div>
 </template>
 
 <script>
 import Hero from './partials/Hero';
 import TextComp from './partials/Text';
+import TextSlider from './partials/TextSlider'
 
 export default {
   name: 'HomePage',
   components: {
     Hero,
-    TextComp
+    TextComp,
+    TextSlider
   },
   data () {
     return {
