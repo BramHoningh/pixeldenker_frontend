@@ -51,6 +51,16 @@ export default {
     background-color: $black-main;
     @include border-radius(6px);
 
+    @include breakpoint(xs) {
+        margin: 12px 8px;
+
+        .content {
+            font-size: 0.875rem !important;
+            font-size: 14px !important;
+            padding: 0 16px;
+        }
+    }
+
     h3 {
         text-shadow: 0 1px 2px rgba(14, 17, 24, 0.64);
     }

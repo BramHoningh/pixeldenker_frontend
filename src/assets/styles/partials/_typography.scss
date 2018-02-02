@@ -58,6 +58,9 @@ h2 {
     line-height: 1.25;
     letter-spacing: -1px;
     color: $white-main;
+    @include breakpoint(xs) {
+        @include font-size(18px);
+    }
 }
 
 h3 {

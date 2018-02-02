@@ -38,14 +38,29 @@ export default {
     @include border-radius(6px);
     background-image: radial-gradient(circle at 0 100%, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.0)), radial-gradient(circle at 0 0, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.0));
     box-shadow: 0 0 4px 0 rgba(72, 142, 255, 0.16);
+
+    @include breakpoint(xs) {
+        height: 524px;
+        margin: 12px 8px;
+        padding: 16px;
+    }
     
     .photo-icon {
         line-height: 21px;
+
+        @include breakpoint(xs) {
+            line-height: 14px;
+        }
 
         img {
             width: 24px;
             height: 21px;
             vertical-align: top;
+
+            @include breakpoint(xs) {
+                width: 16px;
+                height: 14px;
+            }
         }
 
         span.number {
@@ -60,6 +75,11 @@ export default {
         position: absolute;
         bottom: 34px;
         left: 42px;
+
+        @include breakpoint(xs) {
+            bottom: 16px;
+            left: 16px;
+        }
 
         .company {
             .icon {

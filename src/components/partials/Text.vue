@@ -21,6 +21,11 @@ export default {
 
 .text-component {
     padding: 160px;
+
+    @include breakpoint(xs) {
+        padding: 64px 24px;
+        text-align: center;
+    }
 }
 
 </style>

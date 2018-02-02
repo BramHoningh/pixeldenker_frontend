@@ -25,12 +25,21 @@ export default {
     height: 116px;
     @include border-radius(6px);
     background-image: linear-gradient(to left, #f6f9fe, #edf3fd);
+    @include breakpoint(xs) {
+        margin: 100px 8px 24px 8px;
+        height: 80px;
+    }
 
     .button-left {
         position: absolute;
         top: 50%;
         left: 33px;
         transform: translateY(-50%);
+
+        @include breakpoint(xs) {
+            left: 16px;
+            width: calc(100% - 32px);
+        }
     }
 
     .button-right {
@@ -38,6 +47,9 @@ export default {
         top: 50%;
         right: 33px;
         transform: translateY(-50%);
+        @include breakpoint(xs) {
+            display: none;
+        }
     }
 }
 </style>

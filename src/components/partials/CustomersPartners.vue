@@ -29,7 +29,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../assets/styles/all';
+
 .customers-partners {
+
+    @include breakpoint(xs) {
+        padding: 0 24px;
+    }
+
     p {
         max-width: 800px;
         margin: 16px auto 0;
@@ -43,11 +50,20 @@ export default {
         grid-template-rows: auto;
         grid-column-gap: 1px;
 
+        @include breakpoint(xs) {
+            grid-template-columns: 1fr 1fr;
+            margin-top: 65px;
+        }
+
         .partner {
             width: 100%;
             height: 32px;
             background-color: gray;
             margin-bottom: 115px;
+
+            @include breakpoint(xs) {
+                margin-bottom: 65px;
+            }
         }
     }
 }

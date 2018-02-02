@@ -42,6 +42,10 @@ export default {
                 padding: 95px 16px 0 !important;
             }
 
+            p {
+                margin-top: 8px;
+            }
+
             button {
                 position: absolute;
                 bottom: 32px;
