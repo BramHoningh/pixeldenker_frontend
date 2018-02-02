@@ -6,6 +6,8 @@
   <PhotoBlock />
   <WorkExperience />
   <CustomersPartners />
+  <FooterBlock />
+  <PhotoBlock />
 </div>
 </template>
 
@@ -16,6 +18,7 @@ import TextSlider from './partials/TextSlider';
 import PhotoBlock from './partials/PhotoBlock';
 import WorkExperience from './partials/WorkExperience';
 import CustomersPartners from './partials/CustomersPartners';
+import FooterBlock from './partials/FooterBlock';
 
 export default {
   name: 'HomePage',
@@ -25,7 +28,8 @@ export default {
     TextSlider,
     PhotoBlock,
     WorkExperience,
-    CustomersPartners
+    CustomersPartners,
+    FooterBlock
   },
   data () {
     return {
