@@ -1,9 +1,17 @@
 <template>
 <div>
     <div class="text-slider">
-        <div class="slide" v-for="slide in this.slides" :key="slide.index">
-            <h3 class="title">{{ slide.title }}</h3>
-            <div class="content">{{ slide.content }}</div>
+        <div class="slide">
+            <h3 class="title">Wij maken digitale ontwerpen</h3>
+            <div class="content">Hey, mijn naam is Rob Scholten. Een passievolle freelancer, een pixeldenker. <a href="#">Bekijk ons werk.</a>
+                Sinds 2015 werk ik aan projecten die ik leuk en inspirerend vind. Als ambitieuze jonge creatieveling
+                met een passie voor digital design werk ik nauw samen met mijn partners.</div>
+        </div>
+        <div class="slide">
+            <h3 class="title">Wij maken digitale ontwerpen</h3>
+            <div class="content">Hey, mijn naam is Rob Scholten. Een passievolle freelancer, een pixeldenker. <a href="#">Bekijk ons werk.</a>
+                Sinds 2015 werk ik aan projecten die ik leuk en inspirerend vind. Als ambitieuze jonge creatieveling
+                met een passie voor digital design werk ik nauw samen met mijn partners.</div>
         </div>
     </div>
 </div>
@@ -14,14 +22,7 @@ export default {
     name: "TextSlider",
     data () {
         return {
-            slides: [
-                {index: 1, title: "Wij maken digitale ontwerpen", content: `Hey, mijn naam is Rob Scholten. Een passievolle freelancer, een pixeldenker. <a href=\"#\">Bekijk ons werk.</a>
-                Sinds 2015 werk ik aan projecten die ik leuk en inspirerend vind. Als ambitieuze jonge creatieveling
-                met een passie voor digital design werk ik nauw samen met mijn partners.`},
-                {index: 2, title: "Wij maken digitale ontwerpen", content: `Hey, mijn naam is Rob Scholten. Een passievolle freelancer, een pixeldenker. <a href=\"#\">Bekijk ons werk.</a>
-                Sinds 2015 werk ik aan projecten die ik leuk en inspirerend vind. Als ambitieuze jonge creatieveling
-                met een passie voor digital design werk ik nauw samen met mijn partners.`}
-            ]
+
         }
     },
     mounted () {

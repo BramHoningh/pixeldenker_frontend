@@ -3,20 +3,23 @@
   <Hero position="center" />
   <TextComp />
   <TextSlider />
+  <PhotoBlock />
 </div>
 </template>
 
 <script>
 import Hero from './partials/Hero';
 import TextComp from './partials/Text';
-import TextSlider from './partials/TextSlider'
+import TextSlider from './partials/TextSlider';
+import PhotoBlock from './partials/PhotoBlock';
 
 export default {
   name: 'HomePage',
   components: {
     Hero,
     TextComp,
-    TextSlider
+    TextSlider,
+    PhotoBlock
   },
   data () {
     return {
