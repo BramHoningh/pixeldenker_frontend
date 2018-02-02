@@ -37,6 +37,10 @@ export default {
     border-right: 1px solid $border-light-gray;
     position: fixed;
 
+    @include breakpoint(xs) {
+        display: none;
+    }
+
     ul.menu-links {
         list-style: none;
         width: 100%;

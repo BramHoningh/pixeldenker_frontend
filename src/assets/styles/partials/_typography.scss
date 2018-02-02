@@ -46,6 +46,9 @@ h1 {
     line-height: 1.0;
     letter-spacing: -1px;
     color: $white-main;
+    @include breakpoint(xs) {
+        @include font-size(32px);
+    }
 }
 
 h2 {
@@ -64,6 +67,9 @@ h3 {
     line-height: 1.36;
     letter-spacing: -0.7px;
     color: $white-main;
+    @include breakpoint(xs) {
+        @include font-size(18px);
+    }
 }
 
 h1, h2, h3 {
@@ -81,6 +87,9 @@ p {
     line-height: 1.59;
     color: $white-main;
     padding-top: 12px;
+    @include breakpoint(xs) {
+        @include font-size(16px);
+    }
 
     &.dark {
         color: rgba(90, 108, 137, 0.56);

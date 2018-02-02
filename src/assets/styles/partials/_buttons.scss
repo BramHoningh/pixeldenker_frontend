@@ -9,6 +9,10 @@
     @include border-radius(5px);
     @include transition(all 230ms ease-in-out);
 
+    @include breakpoint(xs) {
+        width: 100%;
+    }
+
     &:focus {
         outline: none;
     }

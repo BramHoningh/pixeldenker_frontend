@@ -35,5 +35,10 @@ html, body, ul {
   position: relative;
   margin-left: 100px;
   width: calc(100% - 100px);
+
+  @include breakpoint(xs) {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 </style>

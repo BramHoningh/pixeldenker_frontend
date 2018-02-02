@@ -31,6 +31,27 @@ export default {
     border-radius: 6px;
     background-image: radial-gradient(circle at 0 2%, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.0)), radial-gradient(circle at 42% 31%, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.0));
 
+    @include breakpoint(xs) {
+        position: relative;
+        margin: 8px;
+        height: calc(100vh - 16px);
+        min-height: 0;
+
+        .hero-content {
+            &.left, &.center {
+                padding: 95px 16px 0 !important;
+            }
+
+            button {
+                position: absolute;
+                bottom: 32px;
+                left: 16px;
+                right: 16px;
+                width: calc(100% - 32px);
+            }
+        }
+    }
+
     .hero-content {
         padding: 89px 80px;
 

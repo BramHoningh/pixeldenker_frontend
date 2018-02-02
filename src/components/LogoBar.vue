@@ -31,11 +31,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/styles/all';
+
 .logo-bar {
     img.logo-img {
         position: absolute;
         top: 38px;
         left: 56px;
+        z-index: 999;
+
+        @include breakpoint(xs) {
+            top: 16px;
+            right: 16px;
+            left: auto;
+            width: 61px;
+        }
     }
 }
 </style>
