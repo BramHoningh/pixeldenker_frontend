@@ -4,6 +4,8 @@
   <TextComp />
   <TextSlider />
   <PhotoBlock />
+  <WorkExperience />
+  <CustomersPartners />
 </div>
 </template>
 
@@ -12,6 +14,8 @@ import Hero from './partials/Hero';
 import TextComp from './partials/Text';
 import TextSlider from './partials/TextSlider';
 import PhotoBlock from './partials/PhotoBlock';
+import WorkExperience from './partials/WorkExperience';
+import CustomersPartners from './partials/CustomersPartners';
 
 export default {
   name: 'HomePage',
@@ -19,7 +23,9 @@ export default {
     Hero,
     TextComp,
     TextSlider,
-    PhotoBlock
+    PhotoBlock,
+    WorkExperience,
+    CustomersPartners
   },
   data () {
     return {
