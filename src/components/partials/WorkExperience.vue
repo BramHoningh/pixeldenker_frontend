@@ -53,7 +53,21 @@ export default {
     mounted () {
         var self = this;
         $(document).ready(function () {
-            if($(window).width() < 767) {
+            checkWindowWidth();
+
+            $(window).resize(function () {
+                checkWindowWidth();
+            })
+
+            function checkWindowWidth() {
+                if($(window).width() < 767) {
+                    setSlider();
+                } else {
+                    destroySlider();
+                }
+            }
+
+            function setSlider() {
                 $('.company-slider').slick({
                     slidesToShow: 3,
                     slidesToScroll: 1,
@@ -64,7 +78,9 @@ export default {
                     focusOnSelect: true,
                     infinite: true,
                 });
-            } else {
+            }
+
+            function destroySlider() {
                 $('.company-slider').slick('unslick');
             }
         });
@@ -124,7 +140,7 @@ export default {
                 position: relative;
                 display: inline-block;
                 width: auto !important;
-                margin: 0 14px;
+                margin: 0 1.17%;
             }
 
             &.right {

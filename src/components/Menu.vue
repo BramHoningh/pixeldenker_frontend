@@ -39,17 +39,31 @@ export default {
 
     @include breakpoint(xs) {
         display: none;
+        width: calc(100% - 16px);
+        height: calc(100vh - 16px);
+        z-index: 998;
+        background-color: $black-main;
+        margin: 8px;
+        @include border-radius(6px);
     }
 
     ul.menu-links {
         list-style: none;
         width: 100%;
         padding-top: 57px;
+        @include breakpoint(xs) {
+            padding-top: 80px;
+        }
 
         li {
             text-align: center;
             width: 84px;
             margin: 4px auto;
+            @include breakpoint(xs) {
+                text-align: left;
+                margin: 0;
+                margin-left: 28px;
+            }
 
             a {
                 font-family: 'Poppins', sans-serif;
@@ -59,6 +73,12 @@ export default {
                 padding: 8px 0;
                 border: 1px solid transparent;
                 color: $main-menu-link;
+                @include breakpoint(xs) {
+                    @include font-size(24px);
+                    line-height: 1.50;
+                    letter-spacing: -0.5px;
+                    color: $white-main;
+                }
 
                 &:hover {
                     color: $main-menu-link-hover;
@@ -71,6 +91,10 @@ export default {
                     border-radius: 2px;
                     background-color: rgba(27, 105, 230, 0.08);
                     border: solid 1px rgba(37, 52, 74, 0.04);
+                    @include breakpoint(xs) {
+                        background-color: transparent;
+                        border-color: transparent;
+                    }
                 }
                 
             }
@@ -82,11 +106,22 @@ export default {
         bottom: 57px;
         left: 0;
         right: 0;
+        @include breakpoint(xs) {
+            bottom: 24px;
+            left: 28px;
+            right: auto;
+        }
 
         li.menu-icon {
             text-align: center;
             width: 100%;
             margin: 20px 0;
+            @include breakpoint(xs) {
+                display: inline-block;
+                width: auto;
+                margin: 0;
+                margin-right: 32px;
+            }
 
             a {
                 width: 38px;
