@@ -1,10 +1,10 @@
 <template>
-    <div class="hero-container">
+    <div class="hero-container" :style="{'background-image': 'radial-gradient(circle at 0 2%, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.0)), radial-gradient(circle at 42% 31%, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.0)), url(' + this.backgroundImage + ')'}">
         <div :class="['hero-content', position]">
-            <h1>Passievolle designers.</h1>
-            <h3>Passie en ambitie zijn onze kernvoorwaarden.</h3>
-            <p>Hey, mijn naam is Rob Scholten. Een passievolle freelancer, een pixeldenker. Sinds 2015 werk ik aan projecten die ik leuk en inspirerend vind.</p>
-            <button class="button-primary">Bekijk ons werk</button>
+            <h1>{{this.title}}</h1>
+            <h3>{{this.subtitle}}</h3>
+            <p>{{this.content}}</p>
+            <button v-if="this.buttonText !== undefined" class="button-primary">{{this.buttonText}}</button>
         </div>
     </div>
 </template>
@@ -12,7 +12,7 @@
 <script>
 export default {
     name: 'Hero',
-    props: ['position'],
+    props: ['position', 'backgroundImage', 'title', 'subtitle', 'content', 'buttonText', 'buttonLink'],
     data () {
         return {
             
@@ -26,10 +26,11 @@ export default {
 
 .hero-container {
     background-color: gray;
+    background-size: cover;
+    background-position: center;
     margin: 20px 16px;
     min-height: 778px;
     border-radius: 6px;
-    background-image: radial-gradient(circle at 0 2%, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.0)), radial-gradient(circle at 42% 31%, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.0));
 
     @include breakpoint(xs) {
         position: relative;

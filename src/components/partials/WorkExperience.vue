@@ -4,7 +4,6 @@
     <p class="dark center">Hey, mijn naam is Rob Scholten. Een passievolle freelancer, een pixeldenker. Sinds 2015 werk ik aan projecten die ik leuk en inspirerend vind. Als ambitieuze jonge creatieveling met een passie voor </p>
 
     <div class="world-map">
-        <h1 class="text">DIT IS EEN WERELDKAART</h1>
 
         <div class="company-slider">
             <div class="company left">
@@ -81,7 +80,7 @@ export default {
             }
 
             function destroySlider() {
-                $('.company-slider').slick('unslick');
+                // $('.company-slider').slick('unslick');
             }
         });
     }
@@ -107,20 +106,14 @@ export default {
     .world-map {
         position: relative;
         @include aspect-ratio(1308px, 445px);
-        background-color: gray;
+        // background-color: gray;
         margin: 200px 16px 0;
-        background-image: linear-gradient(to bottom, #edf2f7, rgba(246, 249, 254, 0.0)), linear-gradient(#ffffff, #ffffff);
+        background: linear-gradient(to bottom, #edf2f7, rgba(246, 249, 254, 0.0)), linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+        background-image: url("../../assets/images/px-worldmap.png");
+        background-size: cover;
         @include breakpoint(xs) {
             margin: 64px 0;
             @include aspect-ratio(358px, 456px);
-        }
-
-        .text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: black;
         }
 
         .company-slider {

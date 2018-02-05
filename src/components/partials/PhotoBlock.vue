@@ -1,16 +1,16 @@
 <template>
-<div class="photo-block">
+<div class="photo-block" :style="{'background-image': 'radial-gradient(circle at 0 100%, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.0)), radial-gradient(circle at 0 0, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.0)), url(' + this.backgroundImage + ')'}">
     <div class="photo-icon">
-        <img src="../../assets/camera.svg" alt="Camera Icon">
+        <img src="../../assets/icons/camera.svg" alt="Camera Icon">
         <span class="number">4</span>
     </div>
 
     <div class="content">
         <div class="company">
-            <div class="icon"></div>
-            <div class="name">DeHuyskamer</div>
+            <div class="icon" :style="{'background-image': 'url(' + this.icon + ')'}"></div>
+            <div class="name">{{this.name}}</div>
         </div>
-        <h3>Initatiefnemer van deHuyskamer</h3>
+        <h3>{{this.title}}</h3>
     </div>
 </div>
 </template>
@@ -18,6 +18,7 @@
 <script>
 export default {
     name: "PhotoBlock",
+    props: ['backgroundImage', 'icon', 'name', 'title'],
     data () {
         return {
 
@@ -35,8 +36,9 @@ export default {
     padding: 32px 40px;
     height: 675px;
     background-color: gray;
+    background-size: cover;
+    background-position: center;
     @include border-radius(6px);
-    background-image: radial-gradient(circle at 0 100%, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.0)), radial-gradient(circle at 0 0, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.0));
     box-shadow: 0 0 4px 0 rgba(72, 142, 255, 0.16);
 
     @include breakpoint(xs) {
@@ -86,7 +88,8 @@ export default {
                 display: inline-block;
                 width: 24px;
                 height: 24px;
-                background-color: purple;
+                background-size: cover;
+                background-position: center;
                 @include border-radius(32px);
                 box-shadow: 0 8px 16px 0 rgba(99, 146, 247, 0.16);
                 vertical-align: middle;

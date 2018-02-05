@@ -8,7 +8,7 @@
                 met een passie voor digital design werk ik nauw samen met mijn partners.</div>
         </div>
         <div class="slide">
-            <h3 class="title">Wij maken digitale ontwerpen</h3>
+            <h3 class="title">Van eenmanszaak naar een ambitieus team</h3>
             <div class="content">Hey, mijn naam is Rob Scholten. Een passievolle freelancer, een pixeldenker. <a href="#">Bekijk ons werk.</a>
                 Sinds 2015 werk ik aan projecten die ik leuk en inspirerend vind. Als ambitieuze jonge creatieveling
                 met een passie voor digital design werk ik nauw samen met mijn partners.</div>

@@ -1,11 +1,11 @@
 <template>
     <div class="menu">
         <ul class="menu-links">
-            <li><a class="active" href="#">Thuis</a></li>
-            <li><a href="#">Werk</a></li>
-            <li><a href="#">Over</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Freebie</a></li>
+            <li><router-link to="/">Thuis</router-link></li>
+            <li><router-link to="/werk">Werk</router-link></li>
+            <li><router-link to="/over-ons">Over</router-link></li>
+            <li><router-link to="/contact">Contact</router-link></li>
+            <li><router-link to="/freebie">Freebie</router-link></li>
         </ul>
 
         <ul class="icons">
@@ -85,7 +85,7 @@ export default {
                     background-color: transparent;
                 }
 
-                &.active {
+                &.active, &.router-link-exact-active {
                     font-weight: 600;
                     color: $blue-main-dark;
                     border-radius: 2px;
