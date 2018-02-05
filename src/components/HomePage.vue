@@ -94,6 +94,9 @@ export default {
 .content-container {
   background-color: $white-main;
   margin-bottom: 773px;
+  @include breakpoint(xs) {
+    margin-bottom: 580px;
+  }
 }
 
 .parallax-bottom {
@@ -102,6 +105,9 @@ export default {
   left: 100px;
   right: 0;
   z-index: -999;
+  @include breakpoint(xs) {
+    left: 0;
+  }
 }
 
 </style>
