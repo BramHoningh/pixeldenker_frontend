@@ -15,6 +15,8 @@
     <PhotoBlock 
         :backgroundImage="this.photo.backgroundImage"
     />
+    <ServicesBlock />
+    <WorkExperience />
 </div>
 </template>
 
@@ -24,6 +26,8 @@ import TextComp from './partials/Text';
 import TextSlider from './partials/TextSlider';
 import CrewBlock from './partials/CrewBlock';
 import PhotoBlock from './partials/PhotoBlock';
+import ServicesBlock from './partials/ServicesBlock';
+import WorkExperience from './partials/WorkExperience';
 
 export default {
     name: "AboutPage",
@@ -32,7 +36,9 @@ export default {
         TextComp,
         TextSlider,
         CrewBlock,
-        PhotoBlock
+        PhotoBlock,
+        ServicesBlock,
+        WorkExperience
     },
     data () {
         return {
