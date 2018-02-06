@@ -40,6 +40,40 @@
         border-top-color: #5890ff;
     }
 
+    &.left {
+        margin-left: 30px;
+
+        @include breakpoint(xs) {
+            &:before {
+                right: 10px;
+                left: auto;
+                transform: translateX(0%);
+            }
+
+            &:after {
+                right: 11px;
+                left: auto;
+                transform: translateX(0%);
+            }
+        }
+    }
+
+    &.right {
+        margin-right: 30px;
+
+        @include breakpoint(xs) {
+            &:before {
+                left: 10px;
+                transform: translateX(0%);
+            }
+
+            &:after {
+                left: 11px;
+                transform: translateX(0%);
+            }
+        }
+    } 
+
     &.dark {
         background-color: #5a6c89;
         border-color: #25344a;

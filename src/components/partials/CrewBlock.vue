@@ -7,15 +7,15 @@
     </p>
 
     <div class="crew">
-        <div class="crew-member">
-            <div class="tooltip">{{this.member1.tagLine}}</div>
+        <div class="crew-member left">
+            <div class="tooltip left">{{this.member1.tagLine}}</div>
             <div class="image" :style="{'background-image': 'url(' + this.member1.bgImage + ')'}"></div>
             <div class="job">{{this.member1.job}}</div>
             <div class="name">{{this.member1.name}}</div>
         </div>
 
-        <div class="crew-member">
-            <div class="tooltip dark">{{this.member2.tagLine}}</div>
+        <div class="crew-member right">
+            <div class="tooltip dark right">{{this.member2.tagLine}}</div>
             <div class="image" :style="{'background-image': 'url(' + this.member2.bgImage + ')'}"></div>
             <div class="job">{{this.member2.job}}</div>
             <div class="name">{{this.member2.name}}</div>
@@ -54,7 +54,10 @@ export default {
     position: relative;
     max-width: 590px;
     margin: 158px auto 213px;
-    text-align: center;
+
+    @include breakpoint(xs) {
+        padding: 0 24px;
+    }
 
     p {
 
@@ -76,9 +79,29 @@ export default {
         grid-template-rows: auto;
         grid-column-gap: 1px;
         padding-top: 117px;
+        @include breakpoint(xs) {
+            grid-template-columns: 1fr;
+            padding-top: 0;
+        }
 
         .crew-member {
             width: 100%;
+            text-align: center;
+            @include breakpoint(xs) {
+                margin-top: 60px;
+            }
+
+            &.right {
+                @include breakpoint(xs) {
+                    text-align: right;
+                }
+            }
+
+            &.left {
+                @include breakpoint(xs) {
+                    text-align: left;
+                }
+            }
 
             .image {
                 margin: 25px auto 0;
