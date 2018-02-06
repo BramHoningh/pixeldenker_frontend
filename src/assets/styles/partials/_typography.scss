@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600|Source+Sans+Pro');
 
 $poppins: "Poppins", sans-serif;
+$source-sans-pro: "Source Sans Pro", sans-serif;
 
 .placeholder-text {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $source-sans-pro;
     @include font-size(22px);
     line-height: 2.0;
     color: black;
@@ -85,7 +86,7 @@ h1, h2, h3 {
 }
 
 p {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $source-sans-pro;
     @include font-size(22px);
     line-height: 1.59;
     color: $white-main;

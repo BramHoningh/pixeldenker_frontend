@@ -9,10 +9,10 @@
         </ul>
 
         <ul class="icons">
-            <li class="menu-icon"><a href="#"><img src="#" alt=""></a></li>
-            <li class="menu-icon"><a href="#"><img src="#" alt=""></a></li>
-            <li class="menu-icon"><a href="#"><img src="#" alt=""></a></li>
-            <li class="menu-icon"><a href="#"><img src="#" alt=""></a></li>
+            <li class="menu-icon"><a href="#"><img src="../assets/icons/dribbble.svg" alt="Dribbble icon"></a></li>
+            <li class="menu-icon"><a href="#"><img src="../assets/icons/instagram.svg" alt="Instagram icon"></a></li>
+            <li class="menu-icon"><a href="#"><img src="../assets/icons/linkedin.svg" alt="Linkedin icon"></a></li>
+            <li class="menu-icon"><a href="#"><img src="../assets/icons/twitter.svg" alt="Twitter icon"></a></li>
         </ul>
     </div>
 </template>
@@ -126,7 +126,6 @@ export default {
             a {
                 width: 38px;
                 height: 38px;
-                background-color: gray;
                 border: none;
             }
         }

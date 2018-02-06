@@ -7,32 +7,32 @@
 
         <div class="company-slider">
             <div class="company left">
-                <div class="logo">
+                <div class="logo logo1">
                     <div class="person"></div>
                 </div>
             </div>
 
             <div class="company center">
-                <div class="logo large">
+                <div class="logo logo2 large">
                     <div class="person"></div>
                     <div class="person person-2"></div>
                 </div>
             </div>
 
             <div class="company left-center">
-                <div class="logo small">
+                <div class="logo logo3 small">
                     <div class="person"></div>
                 </div>
             </div>
 
             <div class="company right-center">
-                <div class="logo">
+                <div class="logo logo4">
                     <div class="person"></div>
                 </div>
             </div>
 
             <div class="company right">
-                <div class="logo small">
+                <div class="logo logo5 small">
                     <div class="person"></div>
                 </div>
             </div>
@@ -46,7 +46,7 @@ export default {
     name: "WorkExperience",
     data () {
         return {
-
+            
         }
     },
     mounted () {
@@ -108,7 +108,7 @@ export default {
         @include aspect-ratio(1308px, 445px);
         // background-color: gray;
         margin: 200px 16px 0;
-        background: linear-gradient(to bottom, #edf2f7, rgba(246, 249, 254, 0.0)), linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+        // background: linear-gradient(to bottom, #edf2f7, rgba(246, 249, 254, 0.0)), linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
         background-image: url("../../assets/images/px-worldmap.png");
         background-size: cover;
         @include breakpoint(xs) {
@@ -129,6 +129,7 @@ export default {
 
         .company {
             position: absolute;
+
             @include breakpoint(xs) {
                 position: relative;
                 display: inline-block;
@@ -189,6 +190,7 @@ export default {
                 height: 80px;
                 @include border-radius(33px);
                 box-shadow: 0 8px 16px 0 rgba(58, 138, 215, 0.16);
+                background-size: cover !important;
                 @include breakpoint(xs) {
                     width: 64px;
                     height: 64px;
@@ -213,6 +215,26 @@ export default {
                         @include border-radius(26px);
                     }
                 }
+
+                &.logo1 {
+                    background: url('../../../static/images/logo-agency1.png');
+                }
+
+                &.logo2 {
+                    background: url('../../../static/images/logo-agency2.png');
+                }
+
+                &.logo3 {
+                    background: url('../../../static/images/logo-agency3.png');
+                }
+
+                &.logo4 {
+                    background: url('../../../static/images/logo-agency4.png');
+                }
+
+                &.logo5 {
+                    background: url('../../../static/images/logo-agency5.png');
+                }
             }
 
             .person {
@@ -222,16 +244,18 @@ export default {
                 width: 32px;
                 height: 32px;
                 @include border-radius(16px);
-                background-color: blue;
                 border: 2px solid $white-main;
                 box-shadow: 0 8px 32px 0 rgba(37, 52, 74, 0.16);
+                background-image: url('../../../static/images/Avatar.jpeg');
+                background-size: cover;
                 @include breakpoint(xs) {
                     display: none;
                 }
 
                 &.person-2 {
                     right: -30px;
-                    background-color: orange;
+                    background-image: url('../../../static/images/Avatar.jpeg');
+                    background-size: cover;
                 }
             }
         }

@@ -23,6 +23,10 @@ export default {
 .text-component {
     padding: 160px;
 
+    p {
+        max-width: 800px;
+    }
+
     @include breakpoint(xs) {
         padding: 64px 24px;
         text-align: center;
