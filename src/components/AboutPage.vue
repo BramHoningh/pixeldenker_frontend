@@ -17,6 +17,8 @@
     />
     <ServicesBlock />
     <WorkExperience />
+    <Testimonials />
+    <FooterBlock />
 </div>
 </template>
 
@@ -28,6 +30,8 @@ import CrewBlock from './partials/CrewBlock';
 import PhotoBlock from './partials/PhotoBlock';
 import ServicesBlock from './partials/ServicesBlock';
 import WorkExperience from './partials/WorkExperience';
+import Testimonials from './partials/Testimonials';
+import FooterBlock from './partials/FooterBlock';
 
 export default {
     name: "AboutPage",
@@ -38,7 +42,9 @@ export default {
         CrewBlock,
         PhotoBlock,
         ServicesBlock,
-        WorkExperience
+        WorkExperience,
+        Testimonials,
+        FooterBlock
     },
     data () {
         return {
