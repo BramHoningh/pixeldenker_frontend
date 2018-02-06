@@ -41,9 +41,9 @@
     }
 
     &.left {
-        margin-left: 30px;
-
         @include breakpoint(xs) {
+            margin-left: 30px;
+
             &:before {
                 right: 10px;
                 left: auto;
@@ -59,9 +59,9 @@
     }
 
     &.right {
-        margin-right: 30px;
-
         @include breakpoint(xs) {
+            margin-right: 30px;
+            
             &:before {
                 left: 10px;
                 transform: translateX(0%);
