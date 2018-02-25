@@ -45,6 +45,10 @@ export default {
     grid-column-gap: 41px;
     padding: 16px;
 
+    @include breakpoint(md) {
+        grid-template-columns: 1fr;
+    }
+
     .one {
         padding: 140px 80px;
         min-height: calc(100vh - 32px);
