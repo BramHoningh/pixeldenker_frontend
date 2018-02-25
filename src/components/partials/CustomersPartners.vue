@@ -1,7 +1,7 @@
 <template>
 <div class="customers-partners">
     <h2 class="dark center">Klanten en partners waar wij trots op zijn</h2>
-    <p class="dark center">Hey, mijn naam is Rob Scholten. Een passievolle freelancer, een pixeldenker. Sinds 2015 werk ik aan projecten die ik leuk en inspirerend vind. Als ambitieuze jonge creatieveling met een passie voor digital design werk ik nauw samen met mijn partners. </p>
+    <p class="dark center">Wij werken aan dingen die wij leuk vinden, dit doen wij in samenwerking met onze partners. Voor de volgende klanten en partners hebben wij onze digitale oplossing mogen verwezenlijken.</p>
 
     <div class="partners">
         <div class="partner"></div>

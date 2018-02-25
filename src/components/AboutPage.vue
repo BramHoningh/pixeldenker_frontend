@@ -1,21 +1,17 @@
 <template>
 <div>
-    <Hero position="left"
+    <Hero position="center"
         :backgroundImage="this.hero.backgroundImage"
         :title="this.hero.title"
         :subtitle="this.hero.subtitle"
         :content="this.hero.content"
     />
-    <TextComp 
-        :title="this.textComp.title"
-        :content="this.textComp.content"
+    <ImageSlider
+        :images="this.imageSlider.images"
     />
-    <TextSlider />
     <CrewBlock />
-    <PhotoBlock 
-        :backgroundImage="this.photo.backgroundImage"
-    />
     <ServicesBlock />
+    <DribbbleBlock />
     <WorkExperience />
     <Testimonials />
     <FooterBlock />
@@ -24,11 +20,13 @@
 
 <script>
 import Hero from './partials/Hero';
+import ImageSlider from './partials/ImageSlider';
 import TextComp from './partials/Text';
 import TextSlider from './partials/TextSlider';
 import CrewBlock from './partials/CrewBlock';
 import PhotoBlock from './partials/PhotoBlock';
 import ServicesBlock from './partials/ServicesBlock';
+import DribbbleBlock from './partials/dribbbleBlock';
 import WorkExperience from './partials/WorkExperience';
 import Testimonials from './partials/Testimonials';
 import FooterBlock from './partials/FooterBlock';
@@ -37,11 +35,13 @@ export default {
     name: "AboutPage",
     components: {
         Hero,
+        ImageSlider,
         TextComp,
         TextSlider,
         CrewBlock,
         PhotoBlock,
         ServicesBlock,
+        DribbbleBlock,
         WorkExperience,
         Testimonials,
         FooterBlock
@@ -50,19 +50,18 @@ export default {
         return {
             hero: {
                 backgroundImage: "./static/images/rawpixel-com-296613.jpg",
-                title: "Wij zijn Pixeldenkers.",
-                subtitle: "Wij zijn altijd in voor een uitdaging.",
-                content: `Pixeldenker is een vrij jong digitaal bureau bestaande uit twee gepassioneerde studenten.
-                Sinds 2015 werken wij aan projecten die wij leuk en inspirerend vinden.`
+                title: "Bij Ons Staat de Gebruiker Centraal",
+                subtitle: "Twee studenten met dezelfde ambitie, samen vormen wij Pixeldenker. Een ambitieus jong en betrokken team. Wij zijn Pixeldenkers. Wij combineer strategie, design en development om zo de digitale ambities van onze klanten te realiseren.",
+                content: `Als klant sta jij centraal, wij begeleiden jou bij het realiseren van jouw digitale ambities. Bij Pixeldenker draait het om de gebruikerservaring op het gebied van zowel interactie als interface.`
             },
 
-            textComp: {
-                title: "Het beste resultaat is waar wij naar streven",
-                content: "Hey, mijn naam is Rob Scholten. Een passievolle freelancer, een pixeldenker. Sinds 2015 werk ik aan projecten die ik leuk en inspirerend vind. Als ambitieuze jonge creatieveling met een passie voor digital design werk ik nauw samen met mijn partners. "
-            },
-
-            photo: {
-                backgroundImage: "./static/images/rawpixel-com-303966.jpg"
+            imageSlider: {
+                images: [
+                    "./static/images/rawpixel-com-296613.jpg",
+                    "./static/images/rawpixel-com-296613.jpg",
+                    "./static/images/rawpixel-com-296613.jpg",
+                    "./static/images/rawpixel-com-296613.jpg",
+                ]
             }
         }
     }

@@ -36,6 +36,7 @@ export default {
     width: 100px;
     border-right: 1px solid $border-light-gray;
     position: fixed;
+    z-index: 9999;
 
     @include breakpoint(xs) {
         display: none;

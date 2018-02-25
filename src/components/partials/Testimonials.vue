@@ -1,9 +1,8 @@
 <template>
 <div class="testimonials">
-    <h2 class="dark center">Wat hebben anderen over ons te zeggen?</h2>
-    <p class="dark center">Hey, mijn naam is Rob Scholten. Een passievolle freelancer, een pixeldenker.
-        Sinds 2015 werk ik aan projecten die ik leuk en inspirerend vind.
-        Als ambitieuze jonge creatieveling met een passie voor.</p>
+    <h2 class="dark center">Wat anderen over ons te zeggen hebben</h2>
+    <p class="dark center">Wij kunnen wel uren praten over onze passie,
+        maar wie kunnen je beter informeren over onze kundigheid dan onze klanten zelf?</p>
 
     <div class="testimonial-slider">
         <div class="slider-nav-container">

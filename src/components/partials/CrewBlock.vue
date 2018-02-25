@@ -1,9 +1,9 @@
 <template>
 <div class="crew-block">
     <p class="dark center">
-        Hey, mijn naam is Rob Scholten. Een passievolle freelancer, een pixeldenker.
-        Sinds 2015 werk ik aan projecten die ik leuk en inspirerend vind.
-        Als ambitieuze jonge creatieveling met een passie voor digital design werk ik nauw samen met mijn partners. 
+        Pixeldenker is een samenwerking tussen een designer en developer.
+        Sinds 2015 werken wij aan projecten die wij zowel leuk als inspirerend vinden.
+        Wij betrekken onze klant(en) in het proces. Zo bereiken we samen het doel.
     </p>
 
     <div class="crew">

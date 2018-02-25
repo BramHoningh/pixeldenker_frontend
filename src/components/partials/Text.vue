@@ -21,7 +21,10 @@ export default {
 @import '../../assets/styles/all';
 
 .text-component {
+    position: relative;
+    background-color: $white-main;
     padding: 160px;
+    z-index: 9998;
 
     p {
         max-width: 800px;

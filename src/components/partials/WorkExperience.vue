@@ -1,7 +1,7 @@
 <template>
 <div class="work-experience">
     <h2 class="dark center">Onze werkervaring</h2>
-    <p class="dark center">Hey, mijn naam is Rob Scholten. Een passievolle freelancer, een pixeldenker. Sinds 2015 werk ik aan projecten die ik leuk en inspirerend vind. Als ambitieuze jonge creatieveling met een passie voor </p>
+    <p class="dark center">Wij hebben de kans gekregen om deel uit te maken van de volgende bureaus als stagiaires. De opgedane kennis passen wij toe in ons dagelijks activiteiten.</p>
 
     <div class="world-map">
 

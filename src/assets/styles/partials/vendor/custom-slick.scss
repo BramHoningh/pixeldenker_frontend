@@ -12,7 +12,7 @@
     text-align: center;
     padding: 0;
     margin: 0;
-    max-width: 1024px;
+    // max-width: 1024px;
     width: 100%;
 
     li {
@@ -26,6 +26,30 @@
         margin-left: 20px;
         margin-right: 20px;
         cursor: pointer;
+
+        &:first-child:nth-last-child(1) {
+            width: calc(100% - 40px);
+        }
+
+        &:first-child:nth-last-child(2),
+        &:first-child:nth-last-child(2) ~ li {
+            width: calc(50% - 40px);
+        }
+
+        &:first-child:nth-last-child(3),
+        &:first-child:nth-last-child(3) ~ li {
+            width: calc(33.3333% - 40px);
+        }
+
+        &:first-child:nth-last-child(4),
+        &:first-child:nth-last-child(4) ~ li {
+            width: calc(25% - 40px);
+        }
+
+        &:first-child:nth-last-child(5),
+        &:first-child:nth-last-child(5) ~ li {
+            width: calc(20% - 40px);
+        }
 
         button {
             border: 0;

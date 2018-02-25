@@ -1,23 +1,23 @@
 <template>
 <div>
   <div class="content-container">
-    <Hero position="center" 
+    <Hero position="left" 
           :backgroundImage="this.hero.bgImage"
           :title="this.hero.title" 
-          :subtitle="this.hero.subtitle" 
           :content="this.hero.content" 
           :buttonText="this.hero.buttonText"
+          :secondButtonText="this.hero.secondButtonText"
+          :secondButtonLink="this.hero.secondButtonLink"
     />
     <TextComp 
           :title="this.textComp.title"
           :content="this.textComp.content"
     />
-    <TextSlider />
-    <PhotoBlock 
-          :backgroundImage="this.photoBlockOne.bgImage"
-          :icon="this.photoBlockOne.icon"
-          :name="this.photoBlockOne.name"
-          :title="this.photoBlockOne.title"
+    <DualImage
+          :backgroundColorOne="this.dualImage.bgColorOne"
+          :backgroundImageOne="this.dualImage.bgImageOne"
+          :backgroundColorTwo="this.dualImage.bgColorTwo"
+          :backgroundImageTwo="this.dualImage.bgImageTwo"
     />
     <WorkExperience />
     <CustomersPartners />
@@ -37,7 +37,7 @@
 <script>
 import Hero from './partials/Hero';
 import TextComp from './partials/Text';
-import TextSlider from './partials/TextSlider';
+import DualImage from './partials/DualImage';
 import PhotoBlock from './partials/PhotoBlock';
 import WorkExperience from './partials/WorkExperience';
 import CustomersPartners from './partials/CustomersPartners';
@@ -48,7 +48,7 @@ export default {
   components: {
     Hero,
     TextComp,
-    TextSlider,
+    DualImage,
     PhotoBlock,
     WorkExperience,
     CustomersPartners,
@@ -58,15 +58,22 @@ export default {
     return {
       hero: {
         bgImage: "./static/images/DSCF0946.jpg",
-        title: "Passievolle designers.",
-        subtitle: "Passie en ambitie zijn onze kernvoorwaarden.",
-        content: "Hey, mijn naam is Rob Scholten. Een passievolle freelancer, een pixeldenker. Sinds 2015 werk ik aan projecten die ik leuk en inspirerend vind.",
-        buttonText: "Bekijk ons werk"
+        title: "Pixel Perfectionistisch.",
+        content: "Wij zijn pixeldenkers, twee ambitieuze jonge creatievelingen met een passie voor digital. Pixeldenker combineert design en development voor het realiseren van de digitale ambities van onze klanten.",
+        buttonText: "Bekijk ons werk",
+        secondButtonText: "Of lees ons verhaal"
       },
 
       textComp: {
-        title: "Even voorstellen",
-        content: "Hey, mijn naam is Rob Scholten. Een passievolle freelancer, een pixeldenker. Sinds 2015 werk ik aan projecten die ik leuk en inspirerend vind. Als ambitieuze jonge creatieveling met een passie voor digital design werk ik nauw samen met mijn partners. "
+        title: "Gepassioneerde creatievelingen",
+        content: "Wij zijn twee ambitieuze studenten met een en dezelfde passie. Wij voeren werk uit wat wij interessant vinden, en waar wij als professionals in kunnen groeien. Onze focus ligt op het waarborgen van kwaliteit, dit doen wij pixel voor pixel."
+      },
+
+      dualImage: {
+        bgColorOne: "#103b90",
+        bgImageOne: "./static/images/DSCF0946.jpg",
+        bgColorTwo: "#f6f9fe",
+        bgImageTwo: "./static/images/DSCF0946.jpg",
       },
 
       photoBlockOne: {
