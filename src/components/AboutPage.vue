@@ -26,7 +26,7 @@ import TextSlider from './partials/TextSlider';
 import CrewBlock from './partials/CrewBlock';
 import PhotoBlock from './partials/PhotoBlock';
 import ServicesBlock from './partials/ServicesBlock';
-import DribbbleBlock from './partials/dribbbleBlock';
+import DribbbleBlock from './partials/DribbbleBlock';
 import WorkExperience from './partials/WorkExperience';
 import Testimonials from './partials/Testimonials';
 import FooterBlock from './partials/FooterBlock';
