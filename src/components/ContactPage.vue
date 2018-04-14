@@ -93,7 +93,8 @@ export default {
   .one {
     padding: 140px 80px;
     min-height: calc(100vh - 32px);
-    width: 100%;
+    max-height: calc(100vh - 30px);
+    width: calc(100% - 16px);
     background-image: linear-gradient(to bottom, #f6f9fe, #edf3fd);
     @include border-radius(6px);
     @include box-sizing(border-box);
@@ -104,6 +105,11 @@ export default {
     min-height: calc(100vh - 32px);
     width: 100%;
     background-color: white;
+
+    @include breakpoint(xs) {
+        padding-top: 80px;
+        width: calc(100% - 16px);
+    }
 
     .content {
       position: absolute;
