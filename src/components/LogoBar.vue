@@ -139,6 +139,10 @@ export default {
         z-index: 999;
         border: solid 1px rgba(90, 114, 152, 0.24);
         @include border-radius(3px);
+
+        @include breakpoint(xs) {
+            display: none;
+        }
     }
 
     &.menuIsOpen {

@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import { EventBus } from '../eventBus';
 import { CaseData } from '../CaseData'
 import WorkPreviewBar from './partials/WorkPreviewBar'
 
@@ -63,22 +64,48 @@ export default {
     grid-template-columns: 200px 1fr;
     grid-template-rows: auto;
 
+    @include breakpoint(xs) {
+        grid-template-columns: 1fr;
+    }
+
     .work-menu-container {
         width: 100%;
         padding-right: 8px;
         @include box-sizing(border-box);
         border-right: 1px solid $border-light-gray;
+
+        @include breakpoint(xs) {
+            height: 60px;
+            padding-right: 0;
+            border: 1px solid #e6e6e6;
+            box-shadow: 0 1px 4px 0 rgba(72, 76, 111, 0.1);
+            padding: 12px 0;
+        }
     }
 
-    .work-menu {
+    ul.work-menu {
         position: fixed;
         padding-top: 57px;
         min-height: 100vh;
+        max-width: 100vw;
         list-style: none;
         @include box-sizing(border-box);
 
+        @include breakpoint(xs) {
+            position: relative;
+            min-height: 60px;
+            padding-top: 0;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
         li {
             margin: 4px 0 4px 8px;
+
+            @include breakpoint(xs) {
+                display: inline-block;
+                margin: 0px 8px;
+            }
 
             a {
                 font-family: 'Poppins', sans-serif;
@@ -88,12 +115,6 @@ export default {
                 border: 1px solid transparent;
                 color: $main-menu-link;
                 cursor: pointer;
-                @include breakpoint(xs) {
-                    @include font-size(24px);
-                    line-height: 1.50;
-                    letter-spacing: -0.5px;
-                    color: $white-main;
-                }
 
                 &:hover {
                     color: $main-menu-link-hover;
@@ -106,10 +127,6 @@ export default {
                     border-radius: 2px;
                     background-color: rgba(27, 105, 230, 0.08);
                     border: solid 1px rgba(37, 52, 74, 0.04);
-                    @include breakpoint(xs) {
-                        background-color: transparent;
-                        border-color: transparent;
-                    }
                 }   
             }
         }
