@@ -1,5 +1,5 @@
 <template>
-    <div :class="{'logo-bar': true, 'menuIsOpen': menuIsOpen}">
+    <div :class="{'logo-bar': true, 'menuIsOpen': menuIsOpen, 'case-menu': isCase}">
         <div class="hamburger-menu" @click="toggleMenu">
             <span class="item"></span>
             <span class="item"></span>
@@ -82,6 +82,7 @@ export default {
             z-index: 999;
             width: 24px;
             height: 17px;
+            @include transition(all, 400ms);
             // background-color: gray;
 
             span.item {
@@ -108,15 +109,32 @@ export default {
         }
     }
 
+    &.case-menu {
+        .hamburger-menu {
+            top: 80px;
+        }
+
+        img.logo-img {
+            top: 80px;
+        }
+
+        &.menuIsOpen {
+            .hamburger-menu {
+                top: 29px;
+            }
+
+            img.logo-img {
+                top: 26px;
+            }
+        }
+    }
+
     img.logo-img {
         position: absolute;
         top: 38px;
         left: 56px;
         z-index: 999;
-
-        &.case-logo {
-            left: 260px;
-        }
+        @include transition(all, 400ms);
 
         @include breakpoint(xs) {
             top: 26px;
@@ -152,14 +170,20 @@ export default {
 
                 &:nth-child(1) {
                     width: 24px;
+                    transform-origin: left center;
+                    transform: rotate(45deg);
                 }
 
                 &:nth-child(2) {
                     width: 24px;
+                    opacity: 0;
                 }
 
                 &:nth-child(3) {
-                    width: 24px;
+                    margin-top: 7px;
+                    width: 24px;    
+                    transform-origin: left center;
+                    transform: rotate(-45deg);
                 } 
             }
         }
