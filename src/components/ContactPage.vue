@@ -16,8 +16,8 @@
             <h3 class="dark">Samen sparren?</h3>
             <p class="dark">Heb je een uitdagende vraag of een grensverleggend idee?
                 Neem dan contact op met Rob.
-                Bel mij op <a href="tel:+31621164664">06 2116 4664</a>
-                of mail ons op <a href="mailto:hallo@pixeldenker.nl">hallo@pixeldenker.nl</a></p>
+                Bel mij op <a href="tel:+31621164664" target="_blank">06 2116 4664</a>
+                of mail ons op <a href="mailto:hallo@pixeldenker.nl" target="_blank">hallo@pixeldenker.nl</a></p>
             <div class="map" ref="map"></div>
         </div>
     </div>

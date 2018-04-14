@@ -5,7 +5,9 @@
         :title="this.hero.title"
         :subtitle="this.hero.subtitle"
         :buttonText="this.hero.buttonText"
+        :buttonLink="this.hero.buttonLink"
         :secondButtonText="this.hero.secondButtonText"
+        :secondButtonLink="this.hero.secondButtonLink"
     />
     <CrewBlock />
     <ServicesBlock />
@@ -58,7 +60,9 @@ export default {
                 subtitle: "Twee studenten met dezelfde ambitie, samen vormen wij Pixeldenker. Een ambitieus jong en betrokken team. Wij zijn Pixeldenkers. Wij combineer strategie, design en development om zo de digitale ambities van onze klanten te realiseren.",
                 content: `Als klant sta jij centraal, wij begeleiden jou bij het realiseren van jouw digitale ambities. Bij Pixeldenker draait het om de gebruikerservaring op het gebied van zowel interactie als interface.`,
                 buttonText: "Bekijk ons werk",
-                secondButtonText: "Bekijk deHuyskamer"
+                buttonLink: "werk",
+                secondButtonText: "Bekijk deHuyskamer",
+                secondButtonLink: "werk/dehuyskamer-business"
             },
 
             dribbbleBlock: {
@@ -73,7 +77,7 @@ export default {
             },
 
             footer: {
-                btnText: "Bekijk ons werk",
+                btnText: "Neem contact op",
                 btnLink: "contact"
             }
         }

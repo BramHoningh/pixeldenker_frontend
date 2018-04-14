@@ -29,6 +29,10 @@ export default {
     padding: 0 16px;
     max-width: 1248px;
 
+    @include breakpoint(md) {
+        grid-template-columns: 1fr 1fr;
+    }
+
     @include breakpoint(xs) {
         grid-template-columns: 1fr;
         max-width: auto;

@@ -44,6 +44,10 @@ export default {
         grid-template-rows: auto;
         grid-column-gap: 1px;
 
+        @include breakpoint(md) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
         @include breakpoint(xs) {
             grid-template-columns: 1fr 1fr;
             margin-top: 65px;

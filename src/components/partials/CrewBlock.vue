@@ -37,7 +37,7 @@ export default {
             },
 
             member2: {
-                bgImage: "./static/images/Avatar.jpeg",
+                bgImage: "./static/images/bram.jpg",
                 tagLine: "<p>Hallo!</p>",
                 job: "Developer - Pixeldenker",
                 name: "Bram Honingh"

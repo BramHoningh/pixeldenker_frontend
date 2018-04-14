@@ -96,7 +96,7 @@ export default {
                 btnImage: "../static/images/logo-agency5.png",
                 btnText: "Next case",
                 btnSecondaryText: "deHuyskamer",
-                btnLink: "dehuyskamer"
+                btnLink: "dehuyskamer-business"
             }
         }
     },

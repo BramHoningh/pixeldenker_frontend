@@ -110,21 +110,23 @@ export default {
     }
 
     &.case-menu {
-        .hamburger-menu {
-            top: 80px;
-        }
-
-        img.logo-img {
-            top: 80px;
-        }
-
-        &.menuIsOpen {
+        @include breakpoint(xs) {
             .hamburger-menu {
-                top: 29px;
+                top: 80px;
             }
 
             img.logo-img {
-                top: 26px;
+                top: 80px;
+            }
+
+            &.menuIsOpen {
+                .hamburger-menu {
+                    top: 29px;
+                }
+
+                img.logo-img {
+                    top: 26px;
+                }
             }
         }
     }
@@ -139,8 +141,12 @@ export default {
         @include breakpoint(xs) {
             top: 26px;
             right: 26px;
-            left: auto;
+            left: auto !important;
             width: 61px;
+        }
+
+        &.case-logo {
+            left: 240px;
         }
     }
 

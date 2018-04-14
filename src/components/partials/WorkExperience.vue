@@ -371,7 +371,7 @@ export default {
 
         &.person-2 {
           right: -30px;
-          background-image: url("../../../static/images/Avatar.jpeg");
+          background-image: url("../../../static/images/bram.jpg");
           background-size: cover;
         }
       }

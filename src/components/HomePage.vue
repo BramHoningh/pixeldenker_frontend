@@ -7,6 +7,7 @@
           :title="this.hero.title" 
           :subtitle="this.hero.content" 
           :buttonText="this.hero.buttonText"
+          :buttonLink="this.hero.buttonLink"
           :secondButtonText="this.hero.secondButtonText"
           :secondButtonLink="this.hero.secondButtonLink"
     />
@@ -69,7 +70,9 @@ export default {
         title: "Pixel Perfectionistisch.",
         content: "Wij zijn pixeldenkers, twee ambitieuze jonge creatievelingen met een passie voor digital. Pixeldenker combineert design en development voor het realiseren van de digitale ambities van onze klanten.",
         buttonText: "Bekijk ons werk",
-        secondButtonText: "Of lees ons verhaal"
+        buttonLink: "werk",
+        secondButtonText: "Of lees ons verhaal",
+        secondButtonLink: "over-ons"
       },
 
       textComp: {
@@ -110,7 +113,7 @@ export default {
 
       footer: {
         btnText: "Bekijk ons werk",
-        btnLink: "contact"
+        btnLink: "werk"
       }
     }
   },

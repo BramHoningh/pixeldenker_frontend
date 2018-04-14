@@ -38,7 +38,9 @@
             :image="this.imageBlock.image2"
         />
 
-        <ResultBlock />
+        <ResultBlock
+            :resultLink="'https://business.dehuyskamer.net'"
+        />
 
         <FooterBlock
             :btnImage="this.footer.btnImage"
@@ -123,10 +125,10 @@ export default {
             },
 
             footer: {
-                btnImage: "../static/images/logo-agency5.png",
+                btnImage: "../static/images/app-icon.png",
                 btnText: "Next case",
-                btnSecondaryText: "deHuyskamer",
-                btnLink: "dehuyskamer"
+                btnSecondaryText: "Spotter",
+                btnLink: "spotter"
             }
         }
     },

@@ -10,8 +10,8 @@
                 <div class="text">{{ this.preContent.text }} <a v-if="this.preContent.linkText" :href="this.preContent.linkUrl" target="_blank">{{this.preContent.linkText}}</a></div>
             </div>
 
-            <button v-if="this.buttonText !== undefined" class="button-primary">{{this.buttonText}}</button>
-            <button v-if="this.secondButtonText !== undefined" class="button-secondary second-button">{{this.secondButtonText}}</button>
+            <button v-if="this.buttonText !== undefined" class="button-primary" @click="$router.push(buttonLink)">{{this.buttonText}}</button>
+            <button v-if="this.secondButtonText !== undefined" class="button-secondary second-button" @click="$router.push(secondButtonLink)">{{this.secondButtonText}}</button>
             <div v-if="this.heroImage" class="image-container">
                 <div class="image" :style="{'background-image': 'url(' + this.heroImage + ')'}"></div>
             </div>

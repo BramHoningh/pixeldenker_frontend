@@ -1,7 +1,7 @@
 <template>
 <footer class="main-footer">
-    <button class="button-left button-primary facebook-messenger"><img class="icon" src="../../assets/facebook-messenger.svg"> Stuur een bericht</button>
-    <button class="button-right button-secondary">
+    <a href="https://www.facebook.com/Pixeldenker/" target="_blank"><button class="button-left button-primary facebook-messenger"><img class="icon" src="../../assets/facebook-messenger.svg"> Stuur een bericht</button></a>
+    <button class="button-right button-secondary" @click="$router.push(btnLink)">
         <div v-if="this.btnImage" class="image" :style="{'background-image': 'url(' + this.btnImage + ')'}"></div>
         <span class="text">{{this.btnText}} </span>
         <span class="secondary-text" v-show="this.btnSecondaryText">{{this.btnSecondaryText}}</span>

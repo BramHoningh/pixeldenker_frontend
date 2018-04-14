@@ -1,19 +1,16 @@
 <template>
 <div class="result-block">
     <h2 class="dark">Benieuwd naar het resultaat?</h2>
-    <p class="dark">Hey, mijn naam is Web en app design Rob Scholten.
-        Een passievolle freelancer, een pixeldenker.
-        Sinds 2015 werk ik aan projecten die ik Branding leuk en inspirerend vind.
-        Als ambitieuze jonge creatieveling met een interface design passie voor digital
-        design werk ik nauw samen development met mijn partners.
+    <p class="dark">Wil je onze front-end skills in het wild zien, of ben je gewoon benieuwd naar het eindresultaat? Bij Pixeldenker geven wij niet alleen om het design en usability, ook techniek is een van onze kernwaarden.
     </p>
-    <button class="button-primary">Bekijk online</button>
+    <a v-if="this.resultLink" :href="this.resultLink" target="_blank"><button class="button-primary">Bekijk online</button></a>
 </div>
 </template>
 
 <script>
 export default {
     name: "ResultBlock",
+    props: ['resultLink'],
     data () {
         return {
 
@@ -32,8 +29,8 @@ export default {
         max-width: 1025px;
     }
 
-    button {
-        margin-top: 64px;
+    p {
+        margin-bottom: 64px;
     }
 }
 </style>
