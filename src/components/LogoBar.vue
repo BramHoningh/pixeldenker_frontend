@@ -73,35 +73,38 @@ export default {
 @import '../assets/styles/all';
 
 .logo-bar {
-    .hamburger-menu {
-        position: absolute;
-        top: 29px;
-        left: 26px;
-        z-index: 999;
-        width: 24px;
-        height: 17px;
-        // background-color: gray;
 
-        span.item {
-            display: block;
-            height: 3px;
-            background-color: #475975;
-            @include border-radius(3px);
-            @include transition(all, 500ms);
+    @include breakpoint(xs) {
+        .hamburger-menu {
+            position: absolute;
+            top: 29px;
+            left: 26px;
+            z-index: 999;
+            width: 24px;
+            height: 17px;
+            // background-color: gray;
 
-            &:nth-child(1) {
-                width: 24px;
+            span.item {
+                display: block;
+                height: 3px;
+                background-color: #475975;
+                @include border-radius(3px);
+                @include transition(all, 500ms);
+
+                &:nth-child(1) {
+                    width: 24px;
+                }
+
+                &:nth-child(2) {
+                    width: 18px;
+                    margin-top: 4px;
+                }
+
+                &:nth-child(3) {
+                    width: 12px;
+                    margin-top: 4px;
+                } 
             }
-
-            &:nth-child(2) {
-                width: 18px;
-                margin-top: 4px;
-            }
-
-            &:nth-child(3) {
-                width: 12px;
-                margin-top: 4px;
-            } 
         }
     }
 
