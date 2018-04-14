@@ -40,7 +40,12 @@ export default {
         // background-color: gray;
         background-size: cover;
         background-position: center;
-        border: 1px solid $gray-light;
+        background-repeat: no-repeat;
+        // border: 1px solid $gray-light;
+
+        @include breakpoint(xs) {
+            background-size: contain;
+        }
     }
 }
 </style>

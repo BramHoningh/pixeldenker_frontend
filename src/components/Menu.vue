@@ -69,13 +69,11 @@ export default {
   },
   methods: {
       closeMenu() {
-          console.log('test!')
           this.menuIsOpen = false;
       }
   },
   mounted () {
       EventBus.$on('toggleMenu', event => {
-          console.log(event)
           this.menuIsOpen = event.toggleMenu
       });
   }
