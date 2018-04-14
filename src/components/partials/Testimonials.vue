@@ -11,46 +11,34 @@
 
             <div class="slider-nav">
                 <div class="slider-nav-item">
-                    <div class="image">
-                        <div class="company-logo"></div>
+                    <div class="image" style="background-image: url(./static/images/testimonials/1.jpg)">
+                        <div class="company-logo" style="background-image: url(./static/images/microsoft.png)"></div>
                     </div>
                 </div>
 
                 <div class="slider-nav-item">
-                    <div class="image">
-                        <div class="company-logo"></div>
+                    <div class="image" style="background-image: url(./static/images/testimonials/Koen.png)">
+                        <div class="company-logo" style="background-image: url(./static/images/app-icon.png)"></div>
                     </div>
                 </div>
 
                 <div class="slider-nav-item">
-                    <div class="image">
-                        <div class="company-logo"></div>
+                    <div class="image" style="background-image: url(./static/images/testimonials/harmen.jpg)">
+                        <div class="company-logo" style="background-image: url(./static/images/logo-agency3.png)"></div>
                     </div>
                 </div>
 
                 <div class="slider-nav-item">
-                    <div class="image">
-                        <div class="company-logo"></div>
+                    <div class="image" style="background-image: url(./static/images/testimonials/remco.png)">
+                        <div class="company-logo" style="background-image: url(./static/images/logo-agency1.png)"></div>
                     </div>
                 </div>  
-
-                <div class="slider-nav-item">
-                    <div class="image">
-                        <div class="company-logo"></div>
-                    </div>
-                </div>
-
-                <div class="slider-nav-item">
-                    <div class="image">
-                        <div class="company-logo"></div>
-                    </div>
-                </div>
             </div>
         </div>
 
         <div class="main-slider">
             <div class="main-slider-item">
-                <div class="job">Academic program manager - Microsoft</div>
+                <div class="job">Academic program manager — Microsoft</div>
                 <div class="name">Brian Hewitt</div>
                 <div class="text">
                     When I met Rob when he still was a student, he immediately got the attention of the team because of his ability to understand the actual needs and context. He is trustworthy and reliable and is own urgency to keep learning works inspiring to others
@@ -58,42 +46,26 @@
             </div>
 
             <div class="main-slider-item">
-                <div class="job">CEO - Google</div>
-                <div class="name">Bram Honingh</div>
+                <div class="job">CMD Student — NHL Hogeschool</div>
+                <div class="name">Koen van der Baan</div>
                 <div class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In, mollitia? Neque vel perspiciatis ipsum atque explicabo, reprehenderit quas voluptate quod.
+                    Tijdens het process heb je laten zien dat een goed ontwerp niet stopt bij een mooie indruk. Je respecteer de gegeven kaders en zoek je grenzen op. Hiernaast hebben jullie mij voorzien van nieuwe inzichten.
                 </div>
             </div>
 
             <div class="main-slider-item">
-                <div class="job">Lead Designer - Apple</div>
-                <div class="name">Rob Scholten</div>
+                <div class="job">Interactive Designer — Triggerfish!</div>
+                <div class="name">Harmen Nanninga</div>
                 <div class="text">
-                    When I met Rob when he still was a student, he immediately got the attention of the team because of his ability to understand the actual needs and context. He is trustworthy and reliable and is own urgency to keep learning works inspiring to others
+                    Rob's main quality is his ability to improve himself continuously business-wise as well as personally. With that in mind I believe he has the potential to evolve himself as a real professional.
                 </div>
             </div>
 
             <div class="main-slider-item">
-                <div class="job">Academic program manager - Microsoft</div>
-                <div class="name">Brian Hewitt</div>
+                <div class="job">Co-founder — Digital Chefs</div>
+                <div class="name">Remco van den Hout</div>
                 <div class="text">
-                    When I met Rob when he still was a student, he immediately got the attention of the team because of his ability to understand the actual needs and context. He is trustworthy and reliable and is own urgency to keep learning works inspiring to others
-                </div>
-            </div>
-
-            <div class="main-slider-item">
-                <div class="job">Academic program manager - Microsoft</div>
-                <div class="name">Brian Hewitt</div>
-                <div class="text">
-                    When I met Rob when he still was a student, he immediately got the attention of the team because of his ability to understand the actual needs and context. He is trustworthy and reliable and is own urgency to keep learning works inspiring to others
-                </div>
-            </div>
-
-            <div class="main-slider-item">
-                <div class="job">Academic program manager - Microsoft</div>
-                <div class="name">Brian Hewitt</div>
-                <div class="text">
-                    When I met Rob when he still was a student, he immediately got the attention of the team because of his ability to understand the actual needs and context. He is trustworthy and reliable and is own urgency to keep learning works inspiring to others
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquid deleniti iusto iste possimus laborum dicta consequatur illo delectus dolore earum, blanditiis sequi odit, tempore rem vitae ipsam nisi a.
                 </div>
             </div>
         </div>
@@ -211,8 +183,8 @@ export default {
                         width: 40px;
                         height: 40px;
                         @include border-radius(100px);
-                        background-image: url('http://via.placeholder.com/70x70');
                         background-size: cover;
+                        background-position: center;
                         margin: 0 auto;
                         @include transition(all, 230ms);
                         opacity: 0.8;

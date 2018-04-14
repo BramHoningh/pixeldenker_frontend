@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="21px" viewBox="0 0 70 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>client-logo copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="244" height="32"></rect>
+    </defs>
+    <g id="👶Current" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="01.Homepage-#26" transform="translate(-367.000000, -2946.000000)">
+            <g id="client-logo-copy" transform="translate(280.000000, 2940.000000)">
+                <g id="client-logo-placeholder">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="logo-x32-bg"></g>
+                    <g id="Mnnm" mask="url(#mask-2)" fill="#5A6C89" fill-rule="nonzero">
+                        <g transform="translate(87.000000, 6.000000)">
+                            <polygon id="Fill-1" points="0 7.03604255 27.990597 7.03604255 27.990597 0.0537659574 0 0.0537659574"></polygon>
+                            <polygon id="Fill-2" points="0 21 27.990597 21 27.990597 14.0177234 0 14.0177234"></polygon>
+                            <polygon id="Fill-3" points="41.9835821 14.0177234 69.9738806 14.0177234 69.9738806 7.03604255 41.9835821 7.03604255"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

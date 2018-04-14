@@ -1,17 +1,13 @@
 <template>
 <div class="dribbble-block">
-    <div class="post"></div>
-    <div class="post"></div>
-    <div class="post"></div>
-    <div class="post"></div>
-    <div class="post"></div>
-    <div class="post"></div>
+    <div v-for="(image, index) in this.images" :key="index" class="post" :style="{'background-image': 'url(' + image + ')'}"></div>
 </div>
 </template>
 
 <script>
 export default {
     name: "DribbbleBlock",
+    props: ['images'],
     data () {
         return {
 
@@ -30,18 +26,20 @@ export default {
     grid-column-gap: 24px;
     grid-row-gap: 24px;
     margin: 0 auto;
+    padding: 0 16px;
     max-width: 1248px;
 
     @include breakpoint(xs) {
         grid-template-columns: 1fr;
         max-width: auto;
-        margin: 0 16px;
     }
 
     .post {
         width: 100%;
         height: 300px;
-        background-color: gray;
+        // background-color: gray;
+        background-size: cover;
+        background-position: center;
         border: 1px solid $gray-light;
     }
 }

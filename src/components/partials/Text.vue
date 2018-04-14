@@ -1,6 +1,6 @@
 <template>
 <div class="text-component">
-    <h2 class="dark">{{this.title}}</h2>
+    <h3 v-if="this.title" class="dark">{{this.title}}</h3>
     <p class="dark">{{this.content}}</p>
 </div>
 </template>
@@ -23,11 +23,14 @@ export default {
 .text-component {
     position: relative;
     background-color: $white-main;
-    padding: 160px;
+    padding: 100px 16px;
     z-index: 9998;
+    max-width: 1024px;
+    margin: 0 auto;
 
     p {
         max-width: 800px;
+        white-space: pre-line;
     }
 
     @include breakpoint(xs) {

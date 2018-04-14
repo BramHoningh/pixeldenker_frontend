@@ -34,14 +34,16 @@ export default {
     .text {
         margin-top: 7px;
         font-family: $source-sans-pro;
-        @include font-size(24px);
+        @include font-size(28px);
         font-weight: 300;
         line-height: 1.57;
         color: rgba(71, 89, 117, 0.64);
 
         a {
+            font-weight: 400;
             color: $blue-dark;
             border: none;
+            cursor: pointer;
         }
     }
 }

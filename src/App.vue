@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="{'nonScrollable': !this.canScroll}">
     <MainMenu />
 
     <div class="router-view">
@@ -18,6 +18,11 @@ export default {
   components: {
     MainMenu,
     LogoBar
+  },
+  data () {
+    return {
+      canScroll: true
+    }
   }
 }
 </script>
@@ -28,6 +33,10 @@ export default {
 html, body, ul {
   margin: 0;
   padding: 0;
+}
+
+.stopScroll {
+  overflow: hidden;
 }
 
 .router-view {

@@ -1,24 +1,28 @@
 <template>
 <div>
-    <Hero position="center"
-        :backgroundImage="this.hero.backgroundImage"
+    <Hero type="about"
+        :heroImage="this.hero.backgroundImage"
         :title="this.hero.title"
         :subtitle="this.hero.subtitle"
-        :content="this.hero.content"
-    />
-    <ImageSlider
-        :images="this.imageSlider.images"
+        :buttonText="this.hero.buttonText"
+        :secondButtonText="this.hero.secondButtonText"
     />
     <CrewBlock />
     <ServicesBlock />
-    <DribbbleBlock />
+    <DribbbleBlock
+        :images="this.dribbbleBlock.images"
+    />
     <WorkExperience />
     <Testimonials />
-    <FooterBlock />
+    <FooterBlock
+        :btnText="this.footer.btnText"
+        :btnLink="this.footer.btnLink"
+    />
 </div>
 </template>
 
 <script>
+import { EventBus } from '../eventBus';
 import Hero from './partials/Hero';
 import ImageSlider from './partials/ImageSlider';
 import TextComp from './partials/Text';
@@ -49,21 +53,33 @@ export default {
     data () {
         return {
             hero: {
-                backgroundImage: "./static/images/rawpixel-com-296613.jpg",
+                backgroundImage: "./static/images/Solvisoft/portfolio-img@2x.png",
                 title: "Bij Ons Staat de Gebruiker Centraal",
                 subtitle: "Twee studenten met dezelfde ambitie, samen vormen wij Pixeldenker. Een ambitieus jong en betrokken team. Wij zijn Pixeldenkers. Wij combineer strategie, design en development om zo de digitale ambities van onze klanten te realiseren.",
-                content: `Als klant sta jij centraal, wij begeleiden jou bij het realiseren van jouw digitale ambities. Bij Pixeldenker draait het om de gebruikerservaring op het gebied van zowel interactie als interface.`
+                content: `Als klant sta jij centraal, wij begeleiden jou bij het realiseren van jouw digitale ambities. Bij Pixeldenker draait het om de gebruikerservaring op het gebied van zowel interactie als interface.`,
+                buttonText: "Bekijk ons werk",
+                secondButtonText: "Bekijk deHuyskamer"
             },
 
-            imageSlider: {
+            dribbbleBlock: {
                 images: [
-                    "./static/images/rawpixel-com-296613.jpg",
-                    "./static/images/rawpixel-com-296613.jpg",
-                    "./static/images/rawpixel-com-296613.jpg",
-                    "./static/images/rawpixel-com-296613.jpg",
+                    './static/images/dribbble/webshop-solvisoft-1.png',
+                    './static/images/dribbble/8.jpg',
+                    './static/images/dribbble/5.jpg',
+                    './static/images/dribbble/1.png',
+                    './static/images/dribbble/Spotter-animation-small.gif',
+                    './static/images/dribbble/dribbble-800x600-article_.02.png',
                 ]
+            },
+
+            footer: {
+                btnText: "Bekijk ons werk",
+                btnLink: "contact"
             }
         }
+    },
+    created () {
+        EventBus.$emit('isCase', {isCaseLogo: false})
     }
 }
 </script>

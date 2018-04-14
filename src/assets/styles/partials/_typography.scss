@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,600|Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600|Source+Sans+Pro300,400');
 
 $poppins: "Poppins", sans-serif;
 $source-sans-pro: "Source Sans Pro", sans-serif;
@@ -97,6 +97,7 @@ p {
     line-height: 1.59;
     color: $white-main;
     padding-top: 12px;
+    font-weight: 300;
     @include breakpoint(xs) {
         @include font-size(16px);
     }

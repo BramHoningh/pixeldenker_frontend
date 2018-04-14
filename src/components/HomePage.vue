@@ -1,10 +1,11 @@
 <template>
 <div>
   <div class="content-container">
-    <Hero position="left" 
+    <Hero type="left" 
           :backgroundImage="this.hero.bgImage"
+          :heroImage="this.hero.heroImage"
           :title="this.hero.title" 
-          :content="this.hero.content" 
+          :subtitle="this.hero.content" 
           :buttonText="this.hero.buttonText"
           :secondButtonText="this.hero.secondButtonText"
           :secondButtonLink="this.hero.secondButtonLink"
@@ -20,8 +21,13 @@
           :backgroundImageTwo="this.dualImage.bgImageTwo"
     />
     <WorkExperience />
-    <CustomersPartners />
-    <FooterBlock />
+    <CustomersPartners 
+      :partners="this.partners"
+    />
+    <FooterBlock
+      :btnText="this.footer.btnText"
+      :btnLink="this.footer.btnLink"
+    />
   </div>
   <div class="parallax-bottom">
     <PhotoBlock 
@@ -35,6 +41,7 @@
 </template>
 
 <script>
+import { EventBus } from '../eventBus';
 import Hero from './partials/Hero';
 import TextComp from './partials/Text';
 import DualImage from './partials/DualImage';
@@ -58,6 +65,7 @@ export default {
     return {
       hero: {
         bgImage: "./static/images/DSCF0946.jpg",
+        heroImage: "./static/images/header-img.png",
         title: "Pixel Perfectionistisch.",
         content: "Wij zijn pixeldenkers, twee ambitieuze jonge creatievelingen met een passie voor digital. Pixeldenker combineert design en development voor het realiseren van de digitale ambities van onze klanten.",
         buttonText: "Bekijk ons werk",
@@ -71,10 +79,20 @@ export default {
 
       dualImage: {
         bgColorOne: "#103b90",
-        bgImageOne: "./static/images/DSCF0946.jpg",
+        bgImageOne: "./static/images/rentalCarApp.gif",
         bgColorTwo: "#f6f9fe",
-        bgImageTwo: "./static/images/DSCF0946.jpg",
+        bgImageTwo: "./static/images/dehuyskamer-business/img-small-white-1.png",
       },
+
+      partners: [
+        "./static/images/clients/client-logo.svg",
+        "./static/images/clients/client-logo-2.svg",
+        "./static/images/client-logo.png",
+        "./static/images/clients/client-logo-4.svg",
+        "./static/images/clients/client-logo-9.svg",
+        "./static/images/clients/spotter.png",
+        "./static/images/clients/A-S_logo_CMYK.png",
+      ],
 
       photoBlockOne: {
         bgImage: "./static/images/mockup_macbook_brainstorming_1.jpg",
@@ -89,7 +107,15 @@ export default {
         name: "deHuyskamer",
         title: "Initiatiefnemer van deHuyskamer"
       },
+
+      footer: {
+        btnText: "Bekijk ons werk",
+        btnLink: "contact"
+      }
     }
+  },
+  created () {
+    EventBus.$emit('isCase', {isCaseLogo: false})
   }
 }
 </script>

@@ -1,9 +1,11 @@
 %button {
     min-width: 200px;
     height: 60px;
-    font-family: 'Source Sans Pro', sans-serif;
-    line-height: 0.78;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 1.78;
     text-align: center;
+    padding: 0 20px;
     cursor: pointer;
     @include font-size(18px);
     @include border-radius(5px);

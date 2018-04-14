@@ -4,15 +4,7 @@
     <p class="dark center">Wij werken aan dingen die wij leuk vinden, dit doen wij in samenwerking met onze partners. Voor de volgende klanten en partners hebben wij onze digitale oplossing mogen verwezenlijken.</p>
 
     <div class="partners">
-        <div class="partner"></div>
-        <div class="partner"></div>
-        <div class="partner"></div>
-        <div class="partner"></div>
-
-        <div class="partner"></div>
-        <div class="partner"></div>
-        <div class="partner"></div>
-        <div class="partner"></div>
+        <div class="partner" v-for="(partner, index) in partners" :key="index" :style="{'background-image': 'url(' + partner + ')'}"></div>
     </div>
 </div>
 </template>
@@ -20,6 +12,7 @@
 <script>
 export default {
     name: "CustomersPartners",
+    props: ['partners'],
     data () {
         return {
 
@@ -32,6 +25,7 @@ export default {
 @import '../../assets/styles/all';
 
 .customers-partners {
+    background-color: #ffffff;
 
     @include breakpoint(xs) {
         padding: 0 24px;
@@ -58,8 +52,11 @@ export default {
         .partner {
             width: 100%;
             height: 32px;
-            background-color: gray;
+            // background-color: gray;
             margin-bottom: 115px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
 
             @include breakpoint(xs) {
                 margin-bottom: 65px;
