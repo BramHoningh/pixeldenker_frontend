@@ -28,7 +28,7 @@ export default {
 @import '../../assets/styles/all';
 
 .dual-image {
-    padding: 0 19px;
+    padding: 0 20px;
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
@@ -41,6 +41,7 @@ export default {
     @include breakpoint(xs) {
         grid-template-columns: 1fr;
         grid-row-gap: 20px;
+        max-width: calc(100% - 40px);
     }
 
     .image-container {
@@ -53,7 +54,6 @@ export default {
         @include breakpoint(xs) {
             grid-template-columns: 1fr;
             grid-row-gap: 20px;
-            width: calc(100% - 40px);
         }
 
         .image {

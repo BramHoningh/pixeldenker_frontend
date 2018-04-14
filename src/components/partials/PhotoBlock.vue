@@ -38,6 +38,7 @@ export default {
     background-color: gray;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     @include border-radius(6px);
     box-shadow: 0 0 4px 0 rgba(72, 142, 255, 0.16);
 

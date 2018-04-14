@@ -93,7 +93,7 @@ export default {
   z-index: 9999;
 
   @include breakpoint(xs) {
-    // display: none;
+    display: none;
     opacity: 0;
     width: calc(100% - 16px);
     height: calc(100vh - 16px);
@@ -106,7 +106,7 @@ export default {
 
   &.open {
       @include breakpoint(xs) {
-        //   display: block;
+          display: block;
           opacity: 1;
       }
   }
