@@ -99,6 +99,10 @@ export default {
   padding-top: 133px;
   background-color: #ffffff;
 
+  @include breakpoint(xs) {
+    margin-bottom: 100px;
+  }
+
   p {
     max-width: 700px;
     margin: 16px auto 0;
@@ -110,7 +114,7 @@ export default {
 
   .world-map {
     position: relative;
-    @include aspect-ratio(1308px, 445px);
+    height: 500px;
     // background-color: gray;
     margin: 50px 16px;
     // background: linear-gradient(to bottom, #edf2f7, rgba(246, 249, 254, 0.0)), linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
@@ -121,9 +125,10 @@ export default {
       rgba(242, 246, 253, 0)
     );
     background-size: cover;
+
     @include breakpoint(xs) {
       margin: 64px 0;
-      @include aspect-ratio(358px, 456px);
+      height: 150px;
     }
 
     .company-slider {
@@ -194,9 +199,15 @@ export default {
         .tooltip {
           width: 110px;
           bottom: 90px;
+
+          @include breakpoint(xs) {
+            bottom: 80px;
+            width: 120px;
+          }
         }
 
         &:hover {
+
           .person {
             right: auto;
             right: 31px;
@@ -222,6 +233,11 @@ export default {
         .tooltip {
           width: 140px;
           bottom: 110px;
+
+          @include breakpoint(xs) {
+            bottom: 80px;
+            width: 160px;
+          }
         }
 
         &:hover {
@@ -269,6 +285,10 @@ export default {
         .tooltip {
             width: 150px;
             bottom: 90px; 
+
+            @include breakpoint(xs) {
+              bottom: 80px;
+            }
         }
 
         &:hover {

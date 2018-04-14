@@ -67,6 +67,11 @@ export default {
             bottom: 0;
             background-position: center;
             background-size: cover;
+            background-repeat: no-repeat;
+
+            @include breakpoint(xs) {
+                background-size: contain;
+            }
         }
     }
 }
