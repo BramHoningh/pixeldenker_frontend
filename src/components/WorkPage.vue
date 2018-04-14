@@ -37,6 +37,10 @@ export default {
             this.$router.push(`/werk/${name}`)
         }
     },
+    created () {
+        EventBus.$emit('toggleMenu', { toggleMenu: false })
+        EventBus.$emit('closeMenu', { toggleMenu: false })
+    },
     mounted () {
         this.$router.push('/werk/dehuyskamer-business')
     },

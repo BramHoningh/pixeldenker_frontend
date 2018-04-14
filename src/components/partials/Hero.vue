@@ -71,16 +71,18 @@ export default {
         padding: 95px 16px 0 !important;
       }
 
+      .image {
+        display: none;
+      }
+
       p {
         margin-top: 8px;
       }
 
       button {
-        position: absolute;
-        bottom: 32px;
-        left: 16px;
-        right: 16px;
-        width: calc(100% - 32px);
+        &.second-button {
+          margin-left: 0 !important;
+        }
       }
     }
   }

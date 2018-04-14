@@ -1,11 +1,11 @@
 <template>
     <div :class="{'menu': true, 'open': this.menuIsOpen}">
         <ul class="menu-links">
-            <li><router-link to="/" exact @click="closeMenu">Thuis</router-link></li>
-            <li><router-link to="/werk" @click="closeMenu">Werk</router-link></li>
-            <li><router-link to="/over-ons" @click="closeMenu">Over</router-link></li>
-            <li><router-link to="/contact" @click="closeMenu">Contact</router-link></li>
-            <li><router-link to="/freebie" @click="closeMenu">Freebie</router-link></li>
+            <li><router-link to="/" exact>Thuis</router-link></li>
+            <li><router-link to="/werk">Werk</router-link></li>
+            <li><router-link to="/over-ons">Over</router-link></li>
+            <li><router-link to="/contact">Contact</router-link></li>
+            <li><router-link to="/freebie">Freebie</router-link></li>
         </ul>
 
         <ul class="icons">
@@ -69,11 +69,13 @@ export default {
   },
   methods: {
       closeMenu() {
-          EventBus.$emit('closeMenu', { close: true })
+          console.log('test!')
+          this.menuIsOpen = false;
       }
   },
   mounted () {
       EventBus.$on('toggleMenu', event => {
+          console.log(event)
           this.menuIsOpen = event.toggleMenu
       });
   }

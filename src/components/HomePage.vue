@@ -116,6 +116,9 @@ export default {
   },
   created () {
     EventBus.$emit('isCase', {isCaseLogo: false})
+
+    EventBus.$emit('toggleMenu', { toggleMenu: false })
+    EventBus.$emit('closeMenu', { toggleMenu: false })
   }
 }
 </script>
