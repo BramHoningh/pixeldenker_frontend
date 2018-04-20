@@ -3,8 +3,8 @@
     <div class="one">
         <h1 class="dark">Heb jij een uitdaging?</h1>
         <p class="dark">Wij staan altijd klaar voor een nieuwe uitdaging.
-            Wil jij ons uitdagen of heb je een interessant idee om een keer over te sparren?
-            Neem dan gerust contact met ons op, wij zijn iniedergeval erg benieuwd.
+            Wil jij ons uitdagen of heb je een interessant idee?
+            Neem dan gerust contact met ons op.
         </p>
         <button @click="$router.push('werk')" class="button-primary">Bekijk ons werk</button>
     </div>
@@ -98,6 +98,11 @@ export default {
     background-image: linear-gradient(to bottom, #f6f9fe, #edf3fd);
     @include border-radius(6px);
     @include box-sizing(border-box);
+
+    @include breakpoint(xs) {
+        padding: 140px 20px;
+        width: 100%;
+    }
   }
 
   .two {
@@ -107,7 +112,7 @@ export default {
     background-color: white;
 
     @include breakpoint(xs) {
-        padding-top: 80px;
+        padding-top: 120px;
         width: calc(100% - 16px);
     }
 

@@ -1,12 +1,12 @@
 <template>
-    <div :class="{'logo-bar': true, 'menuIsOpen': menuIsOpen, 'case-menu': isCase}">
-        <div class="hamburger-menu" @click="toggleMenu">
+    <div ref="logoBar" :class="{'logo-bar': true, 'menuIsOpen': menuIsOpen, 'case-menu': isCase}">
+        <div ref="hamburger" class="hamburger-menu" @click="toggleMenu">
             <span class="item"></span>
             <span class="item"></span>
             <span class="item"></span>
         </div>
 
-        <div class="logo">
+        <div ref="logo" class="logo">
             <img v-show="this.showLogo" :class="{'logo-img': true, 'case-logo': this.isCase}" :src="currentLogo" alt="Pixeldenker Logo">
         </div>
 
@@ -46,7 +46,15 @@ export default {
     },  
     mounted () {
         this.currentLogo = (this.isWhiteLogo ? this.whiteLogo : this.colorLogo)
-    },
+
+        $(window).scroll(function (event) {
+            if ($(this).scrollTop() > 55) {
+                $('.logo-bar').addClass('top-nav-mobile')
+            } else {
+                $('.logo-bar').removeClass('top-nav-mobile')
+            }
+        })
+    },  
     created () {
         EventBus.$on('toggleLogo', event => {
             this.showLogo = event.showLogo
@@ -73,6 +81,9 @@ export default {
 @import '../assets/styles/all';
 
 .logo-bar {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
 
     @include breakpoint(xs) {
         .hamburger-menu {
@@ -111,15 +122,16 @@ export default {
 
     &.case-menu {
         @include breakpoint(xs) {
-            .hamburger-menu {
-                top: 80px;
-            }
+            margin-top: 55px;
+            @include transition(all, 500ms);
 
-            img.logo-img {
-                top: 80px;
+            &.top-nav-mobile {
+                margin-top: 0;
             }
 
             &.menuIsOpen {
+                margin-top: 0;
+
                 .hamburger-menu {
                     top: 29px;
                 }
@@ -152,7 +164,7 @@ export default {
 
     .label {
         position: absolute;
-        right: 48px;
+        right: 140px;
         top: 40px;
         padding: 8px 14px;
         font-family: 'Poppins', sans-serif;
@@ -170,6 +182,7 @@ export default {
     }
 
     &.menuIsOpen {
+
         .hamburger-menu {
             span.item { 
                 background-color: $white-main;

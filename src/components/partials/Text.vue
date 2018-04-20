@@ -24,7 +24,7 @@ export default {
     position: relative;
     background-color: $white-main;
     padding: 100px 16px;
-    z-index: 9998;
+    // z-index: 9998;
     max-width: 1024px;
     margin: 0 auto;
 
@@ -34,7 +34,7 @@ export default {
     }
 
     @include breakpoint(xs) {
-        padding: 64px 24px;
+        padding: 20px 24px;
         text-align: center;
     }
 }

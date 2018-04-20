@@ -36,7 +36,7 @@ html, body, ul {
 }
 
 .stopScroll {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .router-view {

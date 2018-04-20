@@ -134,6 +134,10 @@ export default {
    background: -moz-linear-gradient(right, $white-main, rgba(0,0,0,0));
    background: linear-gradient(to right, $white-main, rgba(0,0,0,0));
    z-index: 999;
+
+   @include breakpoint(xs) {
+       display: none;
+   }
 }
 
 .slider-nav-right {
@@ -148,6 +152,10 @@ export default {
    background: -moz-linear-gradient(left, $white-main, rgba(0,0,0,0));
    background: linear-gradient(to left, $white-main, rgba(0,0,0,0));
    z-index: 999;
+
+   @include breakpoint(xs) {
+       display: none;
+   }
 }
 
 .testimonials {

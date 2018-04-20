@@ -100,6 +100,7 @@ export default {
   background-color: #ffffff;
 
   @include breakpoint(xs) {
+    padding-top: 0;
     margin-bottom: 100px;
   }
 

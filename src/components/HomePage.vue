@@ -88,13 +88,13 @@ export default {
       },
 
       partners: [
-        "./static/images/clients/client-logo.svg",
-        "./static/images/clients/client-logo-2.svg",
-        "./static/images/client-logo.png",
+        "./static/images/clients/client-logo-1.png",
+        "./static/images/clients/client-logo-2.png",
+        "./static/images/clients/client-logo-3.svg",
         "./static/images/clients/client-logo-4.svg",
-        "./static/images/clients/client-logo-9.svg",
+        "./static/images/clients/client-logo-5.svg",
+        "./static/images/clients/client-logo-5.png",
         "./static/images/clients/spotter.png",
-        "./static/images/clients/A-S_logo_CMYK.png",
       ],
 
       photoBlockOne: {

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="56px" viewBox="0 0 70 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>quote</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="👶Current" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.08">
+        <g id="03.Over-#10" transform="translate(-735.000000, -1103.000000)" fill="#488EFF">
+            <g id="about---section" transform="translate(475.000000, 1103.000000)">
+                <path d="M260,56 L290.149254,56 L290.149254,25.984 L272.985075,25.984 C273.432836,20.608 274.477612,18.2186667 277.164179,15.9786667 C280.149254,13.44 283.134328,12.2453333 288.955224,11.3493333 L282.38806,0 C275.223881,1.64266667 271.791045,3.28533333 267.910448,7.01866667 C262.686567,11.648 260,18.2186667 260,25.984 L260,56 Z M300,56 L330,56 L330,25.984 L312.985075,25.984 C313.432836,20.608 314.328358,18.2186667 317.164179,15.9786667 C320,13.44 322.985075,12.2453333 328.80597,11.3493333 L322.238806,0 C315.223881,1.64266667 311.791045,3.28533333 307.761194,7.01866667 C302.686567,11.648 300,18.2186667 300,25.984 L300,56 Z" id="quote"></path>
+            </g>
+        </g>
+    </g>
+</svg>

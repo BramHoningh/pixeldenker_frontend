@@ -1,6 +1,7 @@
 <template>
 <div class="crew-block">
     <p class="dark center">
+        <span class="quote" :style="{'background-image': 'url(' + this.quote.image + ')'}"></span>
         Pixeldenker is een samenwerking tussen een designer en developer.
         Sinds 2015 werken wij aan projecten die wij zowel leuk als inspirerend vinden.
         Wij betrekken onze klant(en) in het proces. Zo bereiken we samen het doel.
@@ -29,6 +30,9 @@ export default {
     name: "CrewBlock",
     data () {
         return {
+            quote: {
+                image: './static/images/quote.svg'
+            },
             member1: {
                 bgImage: "./static/images/Avatar.jpeg",
                 tagLine: "Lid van de T500",
@@ -57,19 +61,20 @@ export default {
 
     @include breakpoint(xs) {
         padding: 0 24px;
+        margin-bottom: 100px;
     }
 
     p {
+        position: relative;
 
-        &:before {
-            content: "“";
+        span.quote {
             position: absolute;
-            top: 30px;
+            top: -20px;
             left: 50%;
             transform: translateX(-50%);
-            color: rgba(72, 142, 255, 0.08);
-            line-height: 56px;
-            @include font-size(200px);
+            width: 80px;
+            height: 60px;
+            background-size: cover;
         }
     }
 

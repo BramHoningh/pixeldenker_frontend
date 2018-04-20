@@ -27,7 +27,9 @@
         :imageTwo="this.twoImageBlock.imageFour"
     />
 
-    <ResultBlock />
+    <ResultBlock 
+        :resultLink="'https://dribbble.com/shots/4337837-Spotter-The-Gym-Guide'"
+    />
 
     <FooterBlock
         :btnImage="this.footer.btnImage"

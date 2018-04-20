@@ -31,6 +31,10 @@ export default {
     max-width: 976px;
     text-align: center;
 
+    @include breakpoint(xs) {
+        margin-top: 20px;
+    }
+
     .text {
         margin-top: 7px;
         font-family: $source-sans-pro;
