@@ -21,7 +21,7 @@
                 </a>
             </li>
             <li class="menu-icon">
-                <a href="#" class="instagram">
+                <a href="https://www.instagram.com/pixeldenker/" target="_blank" class="instagram">
                     <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="_navigation/side-menu:default" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-38.000000, -708.000000)">
                             <g id="icon/16x16/instagram" transform="translate(38.000000, 708.000000)" fill="#B0B7C2">
@@ -32,7 +32,7 @@
                 </a>
             </li>
             <li class="menu-icon">
-                <a href="#" class="linkedin">
+                <a href="https://www.linkedin.com/company/10102982/" target="_blank" class="linkedin">
                     <svg width="24px" height="23px" viewBox="0 0 24 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="_navigation/side-menu:default" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-38.000000, -772.000000)">
                             <g id="icon/16x16/linkedin" transform="translate(38.000000, 772.000000)" fill="#B0B7C2">
@@ -43,7 +43,7 @@
                 </a>
             </li>
             <li class="menu-icon">
-                <a href="#" class="twitter">
+                <a href="https://twitter.com/Pixeldenker_" target="_blank" class="twitter">
                     <svg width="24px" height="21px" viewBox="0 0 24 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="_navigation/side-menu:default" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-38.000000, -837.000000)">
                             <g id="icon/16x16/twitter" transform="translate(38.000000, 836.000000)" fill="#B0B7C2">

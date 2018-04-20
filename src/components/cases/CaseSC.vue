@@ -14,11 +14,9 @@
         :content="this.text.content1"
     />
 
-    <DualImage
-        :backgroundColorOne="this.dualImage.bgColorOne"
-        :backgroundImageOne="this.dualImage.bgImageOne"
-        :backgroundColorTwo="this.dualImage.bgColorTwo"
-        :backgroundImageTwo="this.dualImage.bgImageTwo"
+    <TwoImageBlock
+        :imageOne="this.dualImage.bgImageOne"
+        :imageTwo="this.dualImage.bgImageTwo"
     />
 
     <TextComp

@@ -21,8 +21,12 @@ export default {
 
 <style lang="scss" scoped>
 .result-block {
-    margin: 80px 0;
+    margin: 80px 20px;
     text-align: center;
+
+    a {
+        border-bottom: none;
+    }
 
     h2, p {
         margin: 0 auto;

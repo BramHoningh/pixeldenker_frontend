@@ -61,9 +61,16 @@ export default {
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
+            opacity: 0.5;
+            cursor: pointer;
+            @include transition(opacity, 230ms);
 
             @include breakpoint(xs) {
                 margin-bottom: 65px;
+            }
+
+            &:hover {
+                opacity: 1;
             }
         }
     }
