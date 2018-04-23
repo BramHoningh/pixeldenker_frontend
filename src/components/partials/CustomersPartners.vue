@@ -55,7 +55,7 @@ export default {
 
         .partner {
             width: 100%;
-            height: 32px;
+            height: 140px;
             // background-color: gray;
             margin-bottom: 115px;
             background-size: contain;

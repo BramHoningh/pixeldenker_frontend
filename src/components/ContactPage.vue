@@ -16,7 +16,7 @@
             <h3 class="dark">Samen sparren?</h3>
             <p class="dark">Heb je een uitdagende vraag of een grensverleggend idee?
                 Neem dan contact op met Rob.
-                Bel mij op <a href="tel:+31621164664" target="_blank">06 2116 4664</a>
+                Bel mij op <a href="tel:+31620807476" target="_blank">06 20 80 74 76</a>
                 of mail ons op <a href="mailto:hallo@pixeldenker.nl" target="_blank">hallo@pixeldenker.nl</a></p>
             <div class="map" ref="map"></div>
         </div>
@@ -36,10 +36,6 @@ export default {
             {
                 latitude: 52.786896,
                 longitude: 6.11753
-            },
-            {
-                latitude: 53.201242,
-                longitude: 5.802573
             }
         ]
     };
@@ -59,6 +55,13 @@ export default {
             center: new google.maps.LatLng(mapCenter.latitude, mapCenter.longitude)
         }
 
+        const position = new google.maps.LatLng(this.markerCoordinates[0].latitude, this.markerCoordinates[0].longitude);
+        const marker = new google.maps.Marker({ 
+            position,
+            icon: icon,
+            map
+        });
+
         const map = new google.maps.Map(element, options)
         const icon = 'http://dehuyskamer.net/icon/Slice.png'
 
@@ -69,8 +72,6 @@ export default {
                 icon: icon,
                 map
             });
-
-            map.fitBounds(bounds.extend(position))
         });
     }
 };

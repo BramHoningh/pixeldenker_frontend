@@ -28,11 +28,11 @@
                     </div>
                 </div>
 
-                <div class="slider-nav-item">
+                <!-- <div class="slider-nav-item">
                     <div class="image" style="background-image: url(./static/images/testimonials/remco.png)">
                         <div class="company-logo" style="background-image: url(./static/images/logo-agency1.png)"></div>
                     </div>
-                </div>  
+                </div>   -->
             </div>
         </div>
 
@@ -61,13 +61,13 @@
                 </div>
             </div>
 
-            <div class="main-slider-item">
+            <!-- <div class="main-slider-item">
                 <div class="job">Co-founder — Digital Chefs</div>
                 <div class="name">Remco van den Hout</div>
                 <div class="text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquid deleniti iusto iste possimus laborum dicta consequatur illo delectus dolore earum, blanditiis sequi odit, tempore rem vitae ipsam nisi a.
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>

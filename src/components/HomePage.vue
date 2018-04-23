@@ -91,10 +91,10 @@ export default {
         "./static/images/clients/client-logo-1.png",
         "./static/images/clients/client-logo-2.png",
         "./static/images/clients/client-logo-3.svg",
-        "./static/images/clients/client-logo-4.svg",
+        "./static/images/clients/client-logo-4.png",
         "./static/images/clients/client-logo-5.svg",
-        "./static/images/clients/client-logo-5.png",
-        "./static/images/clients/spotter.png",
+        "./static/images/clients/client-logo-6.png",
+        "./static/images/clients/client-logo-7.png",
       ],
 
       photoBlockOne: {
