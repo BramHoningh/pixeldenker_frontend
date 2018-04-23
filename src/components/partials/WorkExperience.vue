@@ -55,6 +55,9 @@ export default {
     return {};
   },
   mounted() {
+
+
+
     var self = this;
     $(document).ready(function() {
       checkWindowWidth();
@@ -88,6 +91,9 @@ export default {
         // $('.company-slider').slick('unslick');
       }
     });
+  },
+  methods: {
+    
   }
 };
 </script>

@@ -92,7 +92,7 @@ export default {
                 arrows: false,
                 centerMode: true,
                 focusOnSelect: true,
-                infinite: true
+                infinite: false
             });
 
             $('.main-slider').slick({
