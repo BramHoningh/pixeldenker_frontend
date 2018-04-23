@@ -1,46 +1,46 @@
 <template>
 <div>
     <div class="case-page">
-        <Hero type="case"
+        <Hero v-vpshow type="case"
             :title="this.hero.title"
             :subtitle="this.hero.subtitle"
         />
 
-        <ImageBlock
+        <ImageBlock v-vpshow
             :image="this.imageBlock.image1"
         />
 
-        <TextComp
+        <TextComp v-vpshow
             :content="this.text.content1"
         />
 
-        <TwoImageBlock
+        <TwoImageBlock v-vpshow
             :imageOne="this.dualImage.bgImageOne"
             :imageTwo="this.dualImage.bgImageTwo"
         />
 
-        <TextComp
+        <TextComp v-vpshow
             :content="this.text.content2"
         />
 
-        <TwoImageBlock
+        <TwoImageBlock v-vpshow
             :imageOne="this.twoImageBlock.imageOne"
             :imageTwo="this.twoImageBlock.imageTwo"
         />
 
-        <TextComp
+        <TextComp v-vpshow
             :content="this.text.content4"
         />
 
-        <ImageBlock
+        <ImageBlock v-vpshow
             :image="this.imageBlock.image2"
         />
 
-        <ResultBlock
+        <ResultBlock v-vpshow
             :resultLink="'https://business.dehuyskamer.net'"
         />
 
-        <FooterBlock
+        <FooterBlock v-vpshow
             :btnImage="this.footer.btnImage"
             :btnText="this.footer.btnText"
             :btnSecondaryText="this.footer.btnSecondaryText"

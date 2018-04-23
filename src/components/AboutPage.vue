@@ -1,6 +1,6 @@
 <template>
 <div>
-    <Hero type="about"
+    <Hero v-vpshow type="about"
         :heroImage="this.hero.backgroundImage"
         :title="this.hero.title"
         :subtitle="this.hero.subtitle"
@@ -9,14 +9,14 @@
         :secondButtonText="this.hero.secondButtonText"
         :secondButtonLink="this.hero.secondButtonLink"
     />
-    <CrewBlock />
-    <ServicesBlock />
-    <DribbbleBlock
+    <CrewBlock v-vpshow />
+    <ServicesBlock v-vpshow />
+    <DribbbleBlock v-vpshow
         :images="this.dribbbleBlock.images"
     />
-    <WorkExperience />
-    <Testimonials />
-    <FooterBlock
+    <WorkExperience v-vpshow />
+    <Testimonials v-vpshow />
+    <FooterBlock v-vpshow
         :btnText="this.footer.btnText"
         :btnLink="this.footer.btnLink"
     />

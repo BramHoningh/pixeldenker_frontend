@@ -1,5 +1,5 @@
 <template>
-<div class="contact-page">
+<div class="contact-page" v-vpshow>
     <div class="one">
         <h1 class="dark">Heb jij een uitdaging?</h1>
         <h3 class="dark">Wij staan altijd klaar voor een nieuwe uitdaging.

@@ -1,0 +1,7 @@
+.before-enter {
+    opacity: 0;
+  }
+  
+  .enter {
+    transition: opacity 1000ms ease;  
+  }

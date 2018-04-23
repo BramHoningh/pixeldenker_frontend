@@ -1,37 +1,37 @@
 <template>
 <div class="case-page">
-    <Hero type="case"
+    <Hero v-vpshow type="case"
         :title="this.hero.title"
         :subtitle="this.hero.subtitle"
     />
 
-    <ImageBlock
+    <ImageBlock v-vpshow
         :image="this.imageBlock.image"
     />
 
-    <TextComp
+    <TextComp v-vpshow
         :content="this.text.content1"
     />
 
-    <TwoImageBlock
+    <TwoImageBlock v-vpshow
         :imageOne="this.twoImageBlock.imageOne"
         :imageTwo="this.twoImageBlock.imageTwo"
     />
 
-    <TextComp
+    <TextComp v-vpshow
         :content="this.text.content2"
     />
 
-    <TwoImageBlock
+    <TwoImageBlock v-vpshow
         :imageOne="this.twoImageBlock.imageThree"
         :imageTwo="this.twoImageBlock.imageFour"
     />
 
-    <ResultBlock 
+    <ResultBlock v-vpshow
         :resultLink="'https://dribbble.com/shots/4337837-Spotter-The-Gym-Guide'"
     />
 
-    <FooterBlock
+    <FooterBlock v-vpshow
         :btnImage="this.footer.btnImage"
         :btnText="this.footer.btnText"
         :btnSecondaryText="this.footer.btnSecondaryText"

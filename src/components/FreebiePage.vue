@@ -1,5 +1,5 @@
 <template>
-<div class="freebies-page">
+<div class="freebies-page" v-vpshow>
     <div class="content">
         <h1 class="dark center">Wij hebben momenteel nog geen Freebies</h1>
         <p class="dark center">Hier is momenteel nog niets vinden, met de onderstaande acties kun je weer zorgeloos gebruik maken van onze site.</p>

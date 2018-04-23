@@ -1,58 +1,58 @@
 <template>
 <div class="case-page">
-    <Hero type="case"
+    <Hero v-vpshow type="case"
         :title="this.hero.title"
         :subtitle="this.hero.subtitle"
     />
 
-    <TwoImageBlock
+    <TwoImageBlock v-vpshow
         :imageOne="this.twoImageBlock.imageOne"
         :imageTwo="this.twoImageBlock.imageTwo"
     />
 
-    <TextComp
+    <TextComp v-vpshow
         :content="this.text.content1"
     />
 
-    <DualImage
+    <DualImage v-vpshow
         :backgroundColorOne="this.dualImage.bgColorOne"
         :backgroundImageOne="this.dualImage.bgImageOne"
         :backgroundColorTwo="this.dualImage.bgColorTwo"
         :backgroundImageTwo="this.dualImage.bgImageTwo"
     />
 
-    <TextComp
+    <TextComp v-vpshow
         :content="this.text.content2"
     />
 
-    <TwoImageBlock
+    <TwoImageBlock v-vpshow
         :imageOne="this.twoImageBlock.imageOne"
         :imageTwo="this.twoImageBlock.imageTwo"
     />
 
-    <TextComp
+    <TextComp v-vpshow
         :content="this.text.content4"
     />
 
-    <ImageBlock
+    <ImageBlock v-vpshow
         :image="this.imageBlock.image"
     />
 
-    <DualImage
+    <DualImage v-vpshow
         :backgroundColorOne="this.dualImage.bgColorOne"
         :backgroundImageOne="this.dualImage.bgImageOne"
         :backgroundColorTwo="this.dualImage.bgColorTwo"
         :backgroundImageTwo="this.dualImage.bgImageTwo"
     />
 
-    <TwoImageBlock
+    <TwoImageBlock v-vpshow
         :imageOne="this.twoImageBlock.imageOne"
         :imageTwo="this.twoImageBlock.imageTwo"
     />
 
-    <ResultBlock />
+    <ResultBlock v-vpshow />
 
-    <FooterBlock
+    <FooterBlock v-vpshow
         :btnImage="this.footer.btnImage"
         :btnText="this.footer.btnText"
         :btnSecondaryText="this.footer.btnSecondaryText"
