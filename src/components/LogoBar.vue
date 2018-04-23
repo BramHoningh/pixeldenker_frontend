@@ -81,13 +81,13 @@ export default {
 @import '../assets/styles/all';
 
 .logo-bar {
-    position: fixed;
+    // position: fixed;
     z-index: 9999;
     width: 100%;
 
     @include breakpoint(xs) {
         .hamburger-menu {
-            position: absolute;
+            position: fixed;
             top: 29px;
             left: 26px;
             z-index: 999;
@@ -122,21 +122,37 @@ export default {
 
     &.case-menu {
         @include breakpoint(xs) {
-            margin-top: 55px;
+            // margin-top: 55px;
             @include transition(all, 500ms);
+
+            .hamburger-menu {
+                margin-top: 55px;
+                @include transition(all, 500ms);
+            }
+
+            img.logo-img {
+                margin-top: 55px;
+                @include transition(all, 500ms);
+            }
 
             &.top-nav-mobile {
                 margin-top: 0;
+
+                .hamburger-menu {
+                    margin-top: 0;
+                }
             }
 
             &.menuIsOpen {
                 margin-top: 0;
 
                 .hamburger-menu {
+                    margin-top: 0;
                     top: 29px;
                 }
 
                 img.logo-img {
+                    margin-top: 0;
                     top: 26px;
                 }
             }

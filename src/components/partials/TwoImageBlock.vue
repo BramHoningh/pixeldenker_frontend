@@ -40,6 +40,10 @@ export default {
         margin: 0 auto -40px;
         max-width: 1024px;
 
+        @include breakpoint(xs) {
+            margin-bottom: 0px;
+        }
+
         img {
             width: 100%;
         }
