@@ -5,7 +5,7 @@
             <li><router-link to="/werk/dehuyskamer-business">deHuyskamer Business</router-link></li>
             <!-- <li><router-link to="/werk/dehuyskamer-webapp">deHuyskamer Webapp</router-link></li> -->
             <li><router-link to="/werk/steigerconfigurator">Steigerconfigurator</router-link></li>
-            <!-- <li><router-link to="/werk/digital-chefs">Digital Chefs</router-link></li> -->
+            <li><router-link to="/werk/digital-chefs">Digital Chefs</router-link></li>
             <li><router-link to="/werk/spotter">Spotter</router-link></li>
             <!-- <li><router-link to="/werk/solvisoft">Solvisoft</router-link></li> -->
         </ul>
