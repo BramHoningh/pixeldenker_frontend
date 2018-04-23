@@ -5,7 +5,7 @@
             <li><router-link to="/werk">Werk</router-link></li>
             <li><router-link to="/over-ons">Over</router-link></li>
             <li><router-link to="/contact">Contact</router-link></li>
-            <li><router-link to="/freebie">Freebie</router-link></li>
+            <li><router-link to="/freebies">Freebie</router-link></li>
         </ul>
 
         <ul class="icons">

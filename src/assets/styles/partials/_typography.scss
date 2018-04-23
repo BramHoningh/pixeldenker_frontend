@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,600|Source+Sans+Pro300,400');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600|Source+Sans+Pro300,400|Karla:400');
 
 $poppins: "Poppins", sans-serif;
 $source-sans-pro: "Source Sans Pro", sans-serif;
+$karla: "Karla", sans-serif;
+
 
 .placeholder-text {
     font-family: $source-sans-pro;
@@ -54,7 +56,7 @@ h1 {
     }
 
     &.dark {
-        color: $gray-dark-light;
+        color: #1f3d6d;
     }
 }
 

@@ -4,6 +4,7 @@ import HomePage from '@/components/HomePage'
 import AboutPage from '@/components/AboutPage'
 import WorkPage from '@/components/WorkPage'
 import ContactPage from '@/components/ContactPage'
+import FreebiesPage from '@/components/FreebiePage'
 import CaseDHKB from '@/components/cases/CaseDHKB'
 import CaseDHKW from '@/components/cases/CaseDHKW'
 import CaseSC from '@/components/cases/CaseSC'
@@ -61,6 +62,11 @@ export default new Router({
       path: '/contact',
       name: 'ContactPage',
       component: ContactPage
+    },
+    {
+      path: '/freebies',
+      name: 'FreebiesPage',
+      component: FreebiesPage
     }
   ],
   scrollBehavior (to, from, savedPosition) {

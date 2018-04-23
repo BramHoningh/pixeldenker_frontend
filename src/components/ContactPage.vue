@@ -2,10 +2,10 @@
 <div class="contact-page">
     <div class="one">
         <h1 class="dark">Heb jij een uitdaging?</h1>
-        <p class="dark">Wij staan altijd klaar voor een nieuwe uitdaging.
+        <h3 class="dark">Wij staan altijd klaar voor een nieuwe uitdaging.
             Wil jij ons uitdagen of heb je een interessant idee?
             Neem dan gerust contact met ons op.
-        </p>
+        </h3>
         <button @click="$router.push('werk')" class="button-primary">Bekijk ons werk</button>
     </div>
     <div class="two">
@@ -103,6 +103,17 @@ export default {
     @include breakpoint(xs) {
         padding: 140px 20px;
         width: 100%;
+    }
+
+    h3 {
+      max-width: 1024px;
+      margin: 40px 0 0;
+      font-family: $source-sans-pro;
+      @include font-size(22px);
+      font-weight: 300;
+      line-height: 1.57;
+      color: $gray-dark-main;
+      margin-bottom: 40px;
     }
   }
 
