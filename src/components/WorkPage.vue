@@ -47,7 +47,16 @@ export default {
     },
     watch: {
         '$route' (to, from) {
-            if (to.fullPath === "/werk") {
+            console.log('from', from)
+            console.log('to', to)
+
+            if (
+                from.fullPath === "/werk/steigerconfigurator" && to.fullPath === "/werk/dehuyskamer-business" ||
+                from.fullPath === "/werk/digital-chefs" && to.fullPath === "/werk/dehuyskamer-business" ||
+                from.fullPath === "/werk/spotter" && to.fullPath === "/werk/dehuyskamer-business"
+            ) {
+                this.$router.push(from.fullPath)
+            } else if (to.fullPath === "/werk") {
                 this.$router.push(from.path)
             }
         }
