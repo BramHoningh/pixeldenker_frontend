@@ -20,9 +20,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../assets/styles/all';
+
 .result-block {
     margin: 80px 20px;
     text-align: center;
+
+    @include breakpoint(xs) {
+        margin: 20px 20px 0px;
+    }
 
     a {
         border-bottom: none;

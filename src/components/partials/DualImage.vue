@@ -56,6 +56,10 @@ export default {
             grid-row-gap: 20px;
         }
 
+        &:last-child {
+            margin-top: -100px;
+        }
+
         .image {
             position: absolute;
             // top: 46px;

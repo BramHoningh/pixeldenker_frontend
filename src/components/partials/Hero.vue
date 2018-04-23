@@ -5,7 +5,7 @@
             <h3 class="dark" v-if="this.subtitle !== undefined">{{this.subtitle}}</h3>
             <p v-if="this.content" class="dark">{{this.content}}</p>
             <div v-if="this.preContent" class="pre-content">
-                <div v-for="(image, index) in this.preContent.images" :key="index" class="image" :style="{'background-image': 'url(' + image + ')'}"></div>
+                <div v-for="(image, index) in this.preContent.images" :key="index" class="pre-content-image" :style="{'background-image': 'url(' + image + ')'}"></div>
 
                 <div class="text">{{ this.preContent.text }} <a v-if="this.preContent.linkText" :href="this.preContent.linkUrl" target="_blank">{{this.preContent.linkText}}</a></div>
             </div>
@@ -60,8 +60,8 @@ export default {
 
   @include breakpoint(xs) {
     margin: 8px;
-    height: calc(100vh - 16px);
-    min-height: 0;
+    min-height: calc(100vh - 16px);
+    // min-height: 0;
 
     .hero-content {
       &.left,
@@ -71,7 +71,7 @@ export default {
         padding: 95px 16px 0 !important;
       }
 
-      .image {
+      .image-container {
         display: none;
       }
 
@@ -99,7 +99,7 @@ export default {
         position: relative;
         min-height: 32px;
 
-        .image {
+        .pre-content-image {
             position: absolute;
             top: 0;
             left: 0;

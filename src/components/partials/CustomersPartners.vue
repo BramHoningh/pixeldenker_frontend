@@ -66,7 +66,7 @@ export default {
             @include transition(opacity, 230ms);
 
             @include breakpoint(xs) {
-                margin-bottom: 65px;
+                margin-bottom: 0;
             }
 
             &:hover {

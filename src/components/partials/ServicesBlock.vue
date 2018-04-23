@@ -43,6 +43,10 @@ export default {
         line-height: 1.57;
         color: rgba(71, 89, 117, 0.64);
 
+        @include breakpoint(xs) {
+            @include font-size(22px);
+        }
+
         a {
             font-weight: 400;
             color: $blue-dark;

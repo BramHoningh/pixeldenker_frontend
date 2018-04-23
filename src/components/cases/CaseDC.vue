@@ -15,7 +15,9 @@
         :content="this.text.content1"
     />
 
-    <ResultBlock v-vpshow />
+    <ResultBlock v-vpshow 
+        :resultLink="'https://eventjes.nl'"
+    />
 
     <FooterBlock v-vpshow
         :btnImage="this.footer.btnImage"
