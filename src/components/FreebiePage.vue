@@ -3,18 +3,26 @@
     <div class="content">
         <h1 class="dark center">Wij hebben momenteel nog geen Freebies</h1>
         <p class="dark center">Hier is momenteel nog niets vinden, met de onderstaande acties kun je weer zorgeloos gebruik maken van onze site.</p>
-        <a href="/" target="_blank">Homepage</a>
+        <a href="/">Homepage</a>
     </div>
 </div>
 </template>
 
 <script>
+import { EventBus } from '../eventBus'
+
 export default {
     name: 'freebies-page',
     data () {
         return {
 
         }
+    },
+    created () {
+        EventBus.$emit('isCase', {isCaseLogo: false})
+
+        EventBus.$emit('toggleMenu', { toggleMenu: false })
+        EventBus.$emit('closeMenu', { toggleMenu: false })
     }
 }
 </script>
@@ -38,6 +46,10 @@ export default {
         transform: translate(-50%, -50%);
         max-width: 625px;
         text-align: center;
+
+        @include breakpoint(xs) {
+            width: calc(100% - 20px);
+        }
 
         a {
             font-family: $karla;
