@@ -23,15 +23,6 @@
             :content="this.text.content2"
         />
 
-        <TwoImageBlock v-vpshow
-            :imageOne="this.twoImageBlock.imageOne"
-            :imageTwo="this.twoImageBlock.imageTwo"
-        />
-
-        <TextComp v-vpshow
-            :content="this.text.content4"
-        />
-
         <ImageBlock v-vpshow
             :image="this.imageBlock.image2"
         />
@@ -108,8 +99,9 @@ export default {
                 content1: `Naast dat wij werk leveren voor verschillende klanten geven wij veel prioriteit aan zelfgroei. Wij houden van goed ontworpen applicaties, zo erg dat we zelf zijn gestart met deHuyskamer. Ondernemen is simpelweg onze passie. Naast dat er veel leermogelijkheden aanwezig waren was ons doel een product neer te zetten die daadwerkelijk impact kan hebben.`,
                 content2: `Bij het opzetten van een online marktplaats waarbij er diensten worden aangeboden is het cruciaal om aanbod te creëren. Zonder aanbod krijgt je platform geen gebruikers, maar zonder gebruikers zal er ook weinig aanbod zijn. Een van onze kernwaarden tijdens het process, ‘software ontwerpen en creëren waar je blij van wordt’. 
                         
-                        Bij deHuyskamer wordt er van huurders een kleine bijdrage verwacht om de kwaliteit van het aanbod te kunnen waarborgen, en het platform draaiende te kunnen houden. Door het opzetten van een marketing website kunnen wij potentiële verhuurders informeren tijdens het werven.`,
-                content4: "Tijdens het ontwerpprocess is er rekening gehouden met de tone of voice richting de potentiële huurders. Het ontwerp is opgezet vanuit componenten om het design zo generiek en consistent als mogelijk neer te zetten. Momenteel is het product nog in ontwikkeling, en blijven wij het doorontwikkelen."
+                        Bij deHuyskamer wordt er van huurders een kleine bijdrage verwacht om de kwaliteit van het aanbod te kunnen waarborgen, en het platform draaiende te kunnen houden. Door het opzetten van een marketing website kunnen wij potentiële verhuurders informeren tijdens het werven.
+                        
+                        Tijdens het ontwerpprocess is er rekening gehouden met de tone of voice richting de potentiële huurders. Het ontwerp is opgezet vanuit componenten om het design zo generiek en consistent als mogelijk neer te zetten. Momenteel is het product nog in ontwikkeling, en blijven wij het doorontwikkelen.`
             },
 
             twoImageBlock: {
@@ -118,7 +110,7 @@ export default {
             },
 
             imageBlock: {
-                image1: "../static/images/dehuyskamer-business/img-normal-1.png",
+                image1: "../static/images/dehuyskamer-business/img-normal-double-3.png",
                 image2: "../static/images/dehuyskamer-business/img-long-1.png"
             },
 

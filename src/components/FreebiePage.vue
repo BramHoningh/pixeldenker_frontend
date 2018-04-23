@@ -52,9 +52,9 @@ export default {
         }
 
         a {
-            font-family: $karla;
-            @include font-size(18px);
-            color: #113c90;
+            font-family: $source-sans-pro;
+            @include font-size(22px);
+            font-weight: 300;
         }
     }
 }
