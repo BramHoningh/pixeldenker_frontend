@@ -25,6 +25,7 @@
     />
 
     <WorkExperience v-vpshow />
+    
     <CustomersPartners v-vpshow 
       :partners="this.partners"
     />
@@ -55,6 +56,8 @@ const PhotoBlock = () => import("./partials/PhotoBlock");
 const WorkExperience = () => import("./partials/WorkExperience");
 const CustomersPartners = () => import("./partials/CustomersPartners");
 const FooterBlock = () => import("./partials/FooterBlock");
+
+// import Testimonials from './partials/Testimonials';
 
 // import Hero from './partials/Hero';
 // import TextComp from './partials/Text';

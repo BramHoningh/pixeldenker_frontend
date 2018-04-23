@@ -92,7 +92,7 @@ export default {
                 arrows: false,
                 centerMode: true,
                 focusOnSelect: true,
-                infinite: false,
+                infinite: true
             });
 
             $('.main-slider').slick({
@@ -206,7 +206,7 @@ export default {
                             bottom: 0;
                             width: 24px;
                             height: 24px;
-                            background-image: url('http://via.placeholder.com/70x70');
+                            // background-image: url('http://via.placeholder.com/70x70');
                             background-size: cover;
                             @include border-radius(32px);
                             background-color: $white-main;
