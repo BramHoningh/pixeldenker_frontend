@@ -54,10 +54,11 @@ export default {
         @include breakpoint(xs) {
             grid-template-columns: 1fr;
             grid-row-gap: 20px;
-        }
+            
+            &:last-child {
+                margin-top: -100px;
+            }
 
-        &:last-child {
-            margin-top: -100px;
         }
 
         .image {

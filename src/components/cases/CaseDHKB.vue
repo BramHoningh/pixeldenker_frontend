@@ -94,7 +94,7 @@ export default {
                     text: "Ondernemen is onze passie"
                 },
                 title: "Het opzetten van een online product",
-                subtitle: `deHuyskamer is een iniatief die resulteerde uit frustratie naar onze eigen ervaringen. De zoektocht naar een kamer is niet altijd even plezierig, en wij zijn van mening dat dit beter kan! Met ons achtergrond als Communication and Multimedia Design student zijn wij begonnen aan dit traject. Nog steed werken wij elke dag vol met passie aan het product.`,
+                subtitle: `deHuyskamer is een iniatief die resulteerde uit frustratie naar onze eigen ervaringen. De zoektocht naar een kamer is niet altijd even plezierig, en wij zijn van mening dat dit beter kan! Met ons achtergrond als Communication and Multimedia Design student zijn wij begonnen aan dit traject. Nog steeds werken wij elke dag vol passie aan het product.`,
             },
 
             dualImage: {
@@ -105,10 +105,10 @@ export default {
             },
 
             text: {
-                content1: `Naast dat wij werk leveren voor verschillende klanten geven wij veel prioriteit aan zelfgroei. Wij houden van goed ontwerpen applicaties, zo erg dat we zelf zijn gestart met deHuyskamer. Ondernemen is simpelweg onze passie. Naast dat er veel leermogelijkheden aanwezig waren was ons doel een product neer te zetten die daadwerkelijk impact kan hebben.`,
+                content1: `Naast dat wij werk leveren voor verschillende klanten geven wij veel prioriteit aan zelfgroei. Wij houden van goed ontworpen applicaties, zo erg dat we zelf zijn gestart met deHuyskamer. Ondernemen is simpelweg onze passie. Naast dat er veel leermogelijkheden aanwezig waren was ons doel een product neer te zetten die daadwerkelijk impact kan hebben.`,
                 content2: `Bij het opzetten van een online marktplaats waarbij er diensten worden aangeboden is het cruciaal om aanbod te creëren. Zonder aanbod krijgt je platform geen gebruikers, maar zonder gebruikers zal er ook weinig aanbod zijn. Een van onze kernwaarden tijdens het process, ‘software ontwerpen en creëren waar je blij van wordt’. 
                         
-                        Bij deHuyskamer wordt er van huurders een kleine bijdrage verwacht om de kwaliteit van het aanbod te kunnen waarborgen, en het platform draaiende te kunnen houden. Door het opzetten van een marketing website kunnen wij potentieel verhuurders informeren tijdens het werven.`,
+                        Bij deHuyskamer wordt er van huurders een kleine bijdrage verwacht om de kwaliteit van het aanbod te kunnen waarborgen, en het platform draaiende te kunnen houden. Door het opzetten van een marketing website kunnen wij potentiële verhuurders informeren tijdens het werven.`,
                 content4: "Tijdens het ontwerpprocess is er rekening gehouden met de tone of voice richting de potentiële huurders. Het ontwerp is opgezet vanuit componenten om het design zo generiek en consistent als mogelijk neer te zetten. Momenteel is het product nog in ontwikkeling, en blijven wij het doorontwikkelen."
             },
 
