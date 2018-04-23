@@ -100,17 +100,6 @@ export default {
     margin: 8px;
     @include border-radius(6px);
     @include transition(all, 230ms);
-
-    &:before {
-        content: "";
-        position: absolute;
-        top: 30px;
-        right: 100%;
-        margin-top: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: transparent $black-main transparent transparent;
-    }
   }
 
   &.open {

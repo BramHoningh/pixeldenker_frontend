@@ -126,7 +126,6 @@ export default {
             @include transition(all, 500ms);
 
             .hamburger-menu {
-                // top: 84px;
                 margin-top: 55px;
                 @include transition(all, 500ms);
             }
@@ -140,8 +139,6 @@ export default {
                 margin-top: 0;
 
                 .hamburger-menu {
-                    // position: fixed;
-                    // top: 0px;
                     margin-top: 0;
                 }
             }
