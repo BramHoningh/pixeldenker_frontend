@@ -7,6 +7,7 @@
         </div>
 
         <div ref="logo" class="logo">
+            
             <img v-show="this.showLogo" :class="{'logo-img': true, 'case-logo': this.isCase}" :src="currentLogo" alt="Pixeldenker Logo">
         </div>
 
