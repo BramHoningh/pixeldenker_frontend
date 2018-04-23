@@ -65,7 +65,7 @@ export default {
                     linkUrl: "http://digitalchefs.nl/"
                 },
                 title: "Kennisvolle werkzaamheden",
-                subtitle: "In opdracht van Digital Chefs heb ik aan meerdere projecten morgen werken. Digital Chefs transformeert bedrijfsprocessen met innovatieve en gebruiksvriendelijke software om je vingers bij af te likken. Mijn rol zat hem voornamelijk in het vertalen van wireframes naar visuele eindproducten, tijdens deze projecten had Digital Chefs een leidende rol."
+                subtitle: "In opdracht van Digital Chefs heeft Rob aan meerdere projecten morgen werken. Digital Chefs transformeert bedrijfsprocessen met innovatieve en gebruiksvriendelijke software om je vingers bij af te likken. Mijn rol zat hem voornamelijk in het vertalen van wireframes naar visuele eindproducten, tijdens deze projecten had Digital Chefs een leidende rol."
             },
             twoImageBlock: {
                 imageOne: "../static/images/digital-chefs/img-small-white-1.png",
