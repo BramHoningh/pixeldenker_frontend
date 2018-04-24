@@ -43,20 +43,7 @@ export default {
         EventBus.$emit('closeMenu', { toggleMenu: false })
     },
     mounted () {
-        this.$router.push('/werk/dehuyskamer-business')
-    },
-    watch: {
-        '$route' (to, from) {
-            if (
-                from.fullPath === "/werk/steigerconfigurator" && to.fullPath === "/werk/dehuyskamer-business" ||
-                from.fullPath === "/werk/digital-chefs" && to.fullPath === "/werk/dehuyskamer-business" ||
-                from.fullPath === "/werk/spotter" && to.fullPath === "/werk/dehuyskamer-business"
-            ) {
-                this.$router.push(from.fullPath)
-            } else if (to.fullPath === "/werk") {
-                this.$router.push(from.path)
-            }
-        }
+        // this.$router.push('/werk/dehuyskamer-business')
     }
 }
 </script>

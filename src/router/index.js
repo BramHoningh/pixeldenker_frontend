@@ -28,10 +28,13 @@ export default new Router({
       component: AboutPage
     },
     {
-      path: '/werk',
-      name: 'WorkPage',
+      path: '/werk', 
       component: WorkPage,
       children: [
+        {
+          path: '/',
+          redirect: 'dehuyskamer-business'
+        },
         {
           path: 'dehuyskamer-business',
           component: CaseDHKB
