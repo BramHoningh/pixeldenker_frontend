@@ -74,10 +74,10 @@ export default {
                         "../static/images/Avatar.jpeg"
                     ],
                     text: "Tijdens werkzaamheden voor",
-                    linkText: "Triggerfish",
+                    linkText: "Triggerfish!",
                     linkUrl: "https://www.triggerfish.nl/"
                 },
-                title: "Vindt in slechts drie stappen de voor jou benodigte steiger",
+                title: "Vindt in slechts drie stappen de voor jou benodigde steiger",
                 subtitle: "Dit project is uitgevoerd tijdens werkzaamheden bij Triggerfish!. Een klant met ambitie, zoals Triggerfish! aangeeft veiligheid tot op de hoogste trede. Tijdens mijn stage periode bij Triggerfish heb ik als stagiair mogen werken aan misschien wel het leukste project. Van een strategie naar resultaat hebben wij dit 'samen' behaald. "
             },
             imageBlock: {

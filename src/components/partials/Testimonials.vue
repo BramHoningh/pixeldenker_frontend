@@ -41,7 +41,7 @@
                 <div class="job">Academic program manager — Microsoft</div>
                 <div class="name">Brian Hewitt</div>
                 <div class="text">
-                    When I met Rob when he still was a student, he immediately got the attention of the team because of his ability to understand the actual needs and context. He is trustworthy and reliable and is own urgency to keep learning works inspiring to others
+                    When I met Rob when he still was a student, he immediately got the attention of the team because of his ability to understand the actual needs and context. He is trustworthy and reliable and his own urgency to keep learning works inspiring to others
                 </div>
             </div>
 

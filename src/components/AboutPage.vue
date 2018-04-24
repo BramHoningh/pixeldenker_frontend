@@ -56,7 +56,7 @@ export default {
         return {
             hero: {
                 backgroundImage: "./static/images/Solvisoft/portfolio-img@2x.png",
-                title: "Bij Ons Staat de Gebruiker Centraal",
+                title: "Bij ons staat de gebruiker centraal",
                 subtitle: "Twee studenten met dezelfde ambitie, samen vormen wij Pixeldenker. Een ambitieus, jong en betrokken team. Wij zijn Pixeldenkers. Wij combineren strategie, design en development om zo de digitale ambities van onze klanten te realiseren.",
                 content: `Als klant sta jij centraal, wij begeleiden jou bij het realiseren van jouw digitale ambities. Bij Pixeldenker draait het om de gebruikerservaring op het gebied van zowel interactie als interface.`,
                 buttonText: "Bekijk ons werk",

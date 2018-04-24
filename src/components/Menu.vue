@@ -176,6 +176,7 @@ export default {
   }
 
   ul.icons {
+    list-style: none;
     position: absolute;
     bottom: 57px;
     left: 0;
