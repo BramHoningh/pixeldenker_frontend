@@ -28,7 +28,7 @@
     />
 
     <ResultBlock v-vpshow
-        :resultLink="'https://dribbble.com/shots/4337837-Spotter-The-Gym-Guide'"
+        resultLink="https://dribbble.com/shots/4337837-Spotter-The-Gym-Guide"
     />
 
     <FooterBlock v-vpshow

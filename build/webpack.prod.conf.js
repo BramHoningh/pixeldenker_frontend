@@ -120,7 +120,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 
     new PrerenderSpaPlugin(
       path.join(__dirname, '../dist'),
-      ['/', '/over-ons', '/contact', '/freebies', '/werk/dehuyskamer-business', '/werk/spotter', '/werk/steigerconfigurator', '/werk/digital-chefs']
+      ['/', '/over-ons', '/contact', '/freebies', '/werk/dehuyskamer-business', '/werk/spotter', '/werk/steigerconfigurator', '/werk/digital-chefs', '/werk/solvisoft']
     )
   ]
 })

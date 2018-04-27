@@ -24,10 +24,20 @@
     />
 
     <ImageBlock v-vpshow
+        :image="this.imageBlock.image3"
+    />
+
+    <TextComp v-vpshow
+        :content="this.text.content3"
+    />
+
+    <ImageBlock v-vpshow
         :image="this.imageBlock.image2"
     />
 
-    <ResultBlock v-vpshow />
+    <ResultBlock v-vpshow 
+        resultLink="https://www.solvisoft.com/nl-nl"
+    />
 
     <FooterBlock v-vpshow
         :btnImage="this.footer.btnImage"
@@ -68,7 +78,7 @@ export default {
             hero: {
                 preContent: {
                     images: [
-                        "../static/images/logo-agency3.png",
+                        "../static/images/Solvisoft/solvisoft.png",
                         "../static/images/Avatar.jpeg"
                     ],
                     text: "Tijdens werkzaamheden voor ",
@@ -76,19 +86,21 @@ export default {
                     linkUrl: "https://www.solvisoft.com/nl-nl"
                 },
                 title: "Samen voor een sterke online aanwezigheid",
-                subtitle: "Iedereen die naar de sportschool gaat of er eens is geweest kent het gevoel van verwarring en onwetendheid. Tenzij je gebruik maakt van een sportschool met personal coach heb je weinig tot geen begeleiding in je eerste trainings maanden. De doelgroep van Spotter heeft deze privilege helaas niet."
+                subtitle: "Solvisoft ontwikkelt innovatieve bedrijfssoftware en verleent complete IT-diensten. Solvisoft neemt zorgen uit handen zodat bedrijven zich kunnen focussen op belangrijke bedrijfsaspecten. Voor Solvisoft verzorgen wij visuele uitwerkingen voor e-commerce projecten."
             },
             imageBlock: {
                 image: "../static/images/solvisoft-business/img-normal-1.png",
-                image2: "../static/images/solvisoft-business/img-long-1.png"
+                image2: "../static/images/solvisoft-business/img-long-1.png",
+                image3: "../static/images/solvisoft-business/img-long-2.png",
             },
             text: {
-                content1: "Een studiegenoot heeft voor zijn afstuderen juist dit probleem proberen te tackelen en kwam met Spotter als oplossing. Spotter kan worden gezien als een persoonlijke assistent die je helpt bij je trainingen en je voorziet van relevante informatie. Wij werden gekozen om het concept te voorzien van een “gebruiksvriendelijk jasje”.",
-                content2: "Het ontwerp is gemaakt aan de hand van een minimal viable product. Spotter wordt uitgewerkt als een webapp die moet aanvoelen als een native app. Door deze keuze zijn er een aantal design keuzes gemaakt waaronder de top navigatie bar. Waarom geen tabbar vraag je je misschien af? Een tabbar conflicteert namelijk met de tabbar van de mobile browser. Deze vorm van navigatie wordt binnen de gehele app gehanteerd. Deze vorm van navigatie is zowel bij IOS als Android gebruikers bekend.",
+                content1: "Tijdens deze projecten heeft Solvisoft leidende hand en wordt er rekening gehouden met de kaders van de aangeboden software. Binnen deze projecten neemt Rob de rol aan als Visueel Designer, hierbij stemt Solvisoft het ontwerp af met de opdrachtgever.",
+                content2: "Onze werkzaamheden bestaan uit het opzetten van interface ontwerpen voor zowel nieuwe als bestaande webshops. Dit realiseren wij door het opzetten van templates en het verlenen van maatwerk waar dit nodig is. Bij het opzetten van een template wordt er rekening gehouden met de verschillende identiteiten waarop het toegepast kan worden.",
+                content3: "Bij projecten waar maatwerk is vereist kijken wij altijd zorgvuldig naar de branding en tone-of-voice voor het project. ‘Hoe kunnen wij het bedrijf visueel positioneren?’ en ‘Hoe zet je een uniek ontwerp neer waarbij de branding van het bedrijf niet verloren gaat die binnen de opgegeven kaders valt?’ zijn kernvragen tijdens ons proces. Hiernaast verzorgen wij ook de ontwerpen voor de Solvisoft website.",
             },
             twoImageBlock: {
                 imageOne: "../static/images/Solvisoft/img-small-white-4.png",
-                imageTwo: "../static/images/Solvisoft/img-small-white-3.png"
+                imageTwo: "../static/images/Solvisoft/img-small-white-5.png"
             },
             footer: {
                 btnImage: "../static/images/logo-agency5.png",
